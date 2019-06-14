@@ -1,0 +1,8 @@
+body { margin: auto; font-family: 'NanumSquare', sans-serif; display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; }
+body p.normal { font-weight: 400; }
+body p.bold { font-weight: 700; }
+body p.bolder { font-weight: 800; }
+body p.light { font-weight: 300; }
+
+.top { width: 100%; min-height: 515px; max-height: 880px; overflow: hidden; }
+.top .banner { min-width: 1124px; width: 100%; height: auto; position: absolute; left: 50%; transform: translateX(-50%); }
