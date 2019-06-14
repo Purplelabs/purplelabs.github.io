@@ -9,6 +9,9 @@ body {
   flex-wrap: nowrap;
   align-items: center;
 
+  p {
+    margin: 0;
+  }
   p.normal { 
     font-weight: 400 
   }
@@ -56,7 +59,6 @@ body {
     right: 0;
 
     display: grid;
-    grid-auto-flow: row;
     grid-template-columns: 1fr auto 1fr 1fr;
     grid-template-rows: 1fr auto auto 1fr 1fr;
     grid-gap: 30px;
@@ -77,5 +79,59 @@ body {
       grid-column: 2;
       grid-row: 3;
     }
+  }
+}
+
+.bottom {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: 209fr 209fr auto 145fr auto;
+  grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 8px;
+
+  .img_map {
+    grid-column: 5;
+    grid-row: 1 / -1;
+    min-width: 768px;
+    width: 100%;
+  }
+
+  .title {
+    grid-row: 2;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #333333;
+  }
+
+  .key {
+    font-size: 13px;
+    color: #333333;
+  }
+
+  .value {
+    font-size: 13px;
+    color: #666666;
+  }
+
+  .title,
+  .key,
+  .value {
+    grid-column: 3;
+    min-width: 337px;
+  }
+
+  .key.address {
+    grid-row: 4;
+  }
+  .value.address {
+    grid-row: 5;
+  }
+  .key.contact {
+    grid-row: 7;
+  }
+  .value.contact {
+    grid-row: 8;
   }
 }
