@@ -338,6 +338,7 @@ header {
   grid-column-gap: 48px;
   align-items: center;
 
+  .logo_purplelabs_white, 
   .logo_purplelabs_purple {
     grid-area: logo;
   }
@@ -349,5 +350,31 @@ header {
   }
   .recruit {
     grid-area: recruit;
+  }
+}
+
+.header {
+  background-color: transparent;
+  .menu {
+    color: white;
+  }
+  .logo_purplelabs_white {
+    display: inline;
+  }
+  .logo_purplelabs_purple {
+    display: none;
+  }
+}
+
+.header--scrolled {
+  background-color: white;
+  .menu {
+    color: #333333;
+  }
+  .logo_purplelabs_white {
+    display: none;
+  }
+  .logo_purplelabs_purple {
+    display: inline;
   }
 }

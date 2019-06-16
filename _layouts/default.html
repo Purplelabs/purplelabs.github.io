@@ -8,11 +8,15 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
   <link rel="stylesheet" type="text/css" href={{page.stylesheet}}>
 
+  <script src="assets/js/header.js"></script> 
+  
   <title>
     {{ page.title }}
   </title>
 </head>
 <body>
   {{ content }}
+  {% include footer.html %}
+  {% include header.html %}
 </body>
 </html>
