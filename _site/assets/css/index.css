@@ -66,3 +66,9 @@ footer .menu.purplelabs { grid-column: 2; }
 footer .menu.purplelabs-healthcare { grid-column: 3; }
 footer .menu.recruit { grid-column: 4; }
 footer .copyright { grid-column: 6; grid-row: 2; font-size: 11px; color: #999999; }
+
+header { position: fixed; width: 100%; height: 88px; top: 0; background-color: white; display: grid; grid-template-columns: 1fr 573px auto auto auto 1fr; grid-template-areas: ". logo purplelabs purplelabs-healthcare recruit ."; grid-column-gap: 48px; align-items: center; }
+header .logo_purplelabs_purple { grid-area: logo; }
+header .purplelabs { grid-area: purplelabs; }
+header .purplelabs-healthcare { grid-area: purplelabs-healthcare; }
+header .recruit { grid-area: recruit; }
