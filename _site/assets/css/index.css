@@ -1,5 +1,5 @@
 .top-image-container, .bottom-image-container { overflow: hidden; position: relative; }
-.top-image-container .top-image-container__image, .top-image-container .bottom-image-container__image, .bottom-image-container .top-image-container__image, .bottom-image-container .bottom-image-container__image { width: 100%; }
+.top-image-container .top-image-container__image, .top-image-container .bottom-image-container__image, .bottom-image-container .top-image-container__image, .bottom-image-container .bottom-image-container__image { width: 100%; position: relative; left: 50%; transform: translateX(-50%); }
 .top-image-container .bottom-text-container, .bottom-image-container .bottom-text-container { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .index.top-image-container { max-height: 880px; }

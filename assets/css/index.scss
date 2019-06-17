@@ -8,6 +8,9 @@
   .top-image-container__image,
   .bottom-image-container__image {
     width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .bottom-text-container {
