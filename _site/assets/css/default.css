@@ -6,6 +6,7 @@ body .bolder { font-weight: 800; }
 body .light { font-weight: 300; }
 
 footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { color: #666666; }
+footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { text-decoration: none; }
 footer .footer__purplelabs { grid-area: purplelabs; }
 footer .footer__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
 footer .footer__recruit { grid-area: recruit; }
@@ -16,6 +17,7 @@ footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .foote
 footer .footer__copyright { font-size: 11px; }
 
 header .header__logo-white, header .header__logo-purple { grid-area: logo; }
+header .header__purplelabs, header .header__purplelabs-healthcare, header .header__recruit { text-decoration: none; }
 header .header__purplelabs { grid-area: purplelabs; }
 header .header__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
 header .header__recruit { grid-area: recruit; }

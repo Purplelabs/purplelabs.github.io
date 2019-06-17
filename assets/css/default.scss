@@ -28,6 +28,12 @@ footer {
     color: #666666;
   }
 
+  .footer__purplelabs,
+  .footer__purplelabs-healthcare,
+  .footer__recruit {
+    text-decoration: none;
+  }
+
   .footer__purplelabs {
     grid-area: purplelabs;
   }
@@ -70,6 +76,12 @@ header {
   .header__logo-white, 
   .header__logo-purple {
     grid-area: logo;
+  }
+
+  .header__purplelabs,
+  .header__purplelabs-healthcare,
+  .header__recruit {
+    text-decoration: none;
   }
 
   .header__purplelabs {
