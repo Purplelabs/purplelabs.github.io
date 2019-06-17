@@ -365,10 +365,11 @@
   grid-template-areas: ". . . . map"
                        ". . title . map"
                        ". . . . map"
-                       ". . address-key map"
-                       ". . address-value map"
-                       ". . contact-key map"
-                       ". . contact-value map"
+                       ". . address-key . map"
+                       ". . address-value . map"
+                       ". . . . map"
+                       ". . contact-key . map"
+                       ". . contact-value . map"
                        ". . . . map";
 
   .directions__map {
