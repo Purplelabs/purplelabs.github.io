@@ -50,3 +50,12 @@
 .card { padding: 30px; display: grid; grid-gap: 20px; grid-auto-flow: row; grid-template-rows: auto 1fr; }
 .card .card__number { font-size: 18px; }
 .card .card__title { font-size: 24px; line-height: 1.5; }
+
+.service .service__image1 { grid-area: image1; }
+.service .service__image2 { grid-area: image2; }
+.service .service__image3 { grid-area: image3; }
+.service .service__image4 { grid-area: image4; }
+.service .service__image5 { grid-area: image5; }
+.service .service__image6 { grid-area: image6; }
+
+.service { padding-bottom: 100px; display: grid; grid-auto-flow: dense; justify-content: center; grid-gap: 10px; grid-auto-columns: 335px; grid-auto-rows: 250px; grid-template-rows: 640px; grid-template-areas: "image1 image1 image1" "image2 image3 image4" "image5 image5 image4" "image5 image5 image6"; }
