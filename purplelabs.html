@@ -15,15 +15,9 @@ script: assets/js/purplelabs.js
 </section>
 
 <section class="company">
-  <div class="slogan-container">
-    <img class="slogan-container__open" src="assets/images/ic-talkbox-start.svg">
-    <p class="light slogan-container__line1">소비자, 공급자</p>
-    <p class="light slogan-container__line2">모두가 Win-Win하는</p>
-    <p class="light slogan-container__line3">오프라인 혁신을</p>
-    <p class="light slogan-container__line4">목표로 합니다.</p>
-    <img class="slogan-container__close" src="assets/images/ic-talkbox-end.svg">
-  </div>
-
+  {% include company/slogan.html 
+    line-start = "소비자, 공급자" lines = "모두가 Win-Win하는<br/>오프라인 혁신을" line-end = "목표로 합니다." %}
+  
   <p class="normal paragraph1">
     무인스토어, 무인스토어솔루션을 개발하는 퓨처리테일 솔루션 팀 퍼플랩스는 연쇄 창업가 전종하 대표가 창업한 팀입니다.
   </p>
@@ -40,15 +34,15 @@ script: assets/js/purplelabs.js
 
 <section class="goal">
   <p class="light goal__title">우리가 추구하는 것</p>
-  {% include purplelabs/card.html
+  {% include company/card.html
     number = "01" title = "매출과 이익" %}
-  {% include purplelabs/card.html
+  {% include company/card.html
     number = "02" title = "절대품질, 절대가격을 통한<br/>합리적 프리미엄" %}
-  {% include purplelabs/card.html
+  {% include company/card.html
     number = "03" title = "오프라인 혁신을 통한<br/>고객의 라이프 파트너" %}
-  {% include purplelabs/card.html
+  {% include company/card.html
     number = "04" title = "데이터에 기반한<br/>상호작용" %}
-  {% include purplelabs/card.html
+  {% include company/card.html
     number = "05" title = "고객과의 신뢰" %}
 </section>
 

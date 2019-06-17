@@ -1,0 +1,398 @@
+---
+---
+.top-image-container,
+.bottom-image-container {
+  overflow: hidden;
+  position: relative;
+
+  .top-image-container__image,
+  .bottom-image-container__image {
+    width: 100%;
+  }
+
+  .bottom-text-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.purplelabs-healthcare.top-image-container {
+  max-height: 560px;
+
+  .purplelabs-healthcare.top-image-container__image {
+    min-width: 1280px;
+  }
+}
+
+.purplelabs-healthcare.bottom-image-container {
+  max-height: 400px;
+
+  .purplelabs-healthcare.bottom-image-container__image {
+    min-width: 1280px;
+  }
+}
+
+.purplelabs-healthcare.bottom-text-container {
+  .purplelabs-healthcare.bottom-text-container__title,
+  .purplelabs-healthcare.bottom-text-container__content {
+    color: white;
+    text-align: center;
+  }
+}
+
+.purplelabs-healthcare.bottom-text-container {
+  margin: 100px 30px 110px 30px;
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 60px;
+  
+  .purplelabs-healthcare.bottom-text-container__title {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  .purplelabs-healthcare.bottom-text-container__content {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+
+.tab {
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  .tab__company,
+  .tab__service,
+  .tab__member {
+    flex-basis: 340px;
+    padding: 25px 0 25px 0;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.2;
+    color: #333333;
+  }
+}
+
+.company {
+  .slogan {
+    grid-area: slogan;
+  }
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    color: #666666;
+  }
+
+  .paragraph1 {
+    grid-area: paragraph1;
+  }
+
+  .paragraph2 {
+    grid-area: paragraph2;
+  }
+
+  .paragraph3 {
+    grid-area: paragraph3;
+  }
+
+  .paragraph4 {
+    grid-area: paragraph4;
+  }
+}
+
+.company {
+  padding: 100px 0 100px 0;
+  display: grid;
+  grid-column-gap: 48px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr repeat(2, 512px) 1fr;
+  grid-template-areas: ". slogan paragraph1 ."
+                       ". slogan paragraph2 ."
+                       ". slogan paragraph3 ."
+                       ". slogan paragraph4 .";
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.slogan {
+  .slogan__open {
+    grid-area: open;
+  }
+
+  .slogan-container__line1,
+  .slogan-container__line2,
+  .slogan-container__line3,
+  .slogan-container__line4 {
+    color: #666666;
+  }
+
+  .slogan__line-start {
+    grid-area: line-start;
+  }
+
+  .slogan__lines {
+    grid-area: lines;
+  }
+
+  .slogan__line-end {
+    grid-area: line-end;
+  }
+
+  .slogan__close {
+    grid-area: close;
+  }
+}
+
+.slogan {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(2, auto) 1fr;
+  grid-template-rows: repeat(2, auto) 1fr;
+  grid-template-areas: "open line-start line-start"
+                       ". lines lines"
+                       ". line-end close";
+
+  .slogan__line-start,
+  .slogan__lines,
+  .slogan__line-end {
+    font-size: 36px;
+    line-height: 1.61;
+  }
+}
+
+.goal {
+  background-color: #f5f5f5;
+
+  .goal__title {
+    grid-area: title;
+    text-align: center;
+    color: #333333;
+  }
+}
+
+.goal {
+  padding: 100px 0 100px 0;
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-auto-rows: 148px;
+  grid-template-columns: repeat(3, 335px);
+  grid-template-rows: 70px;
+  grid-template-areas: "title title title";
+  .goal__title {
+    font-size: 36px;
+  }
+}
+
+.card {
+  background-color: white;
+
+  .card__number {
+    color: #663399;
+  }
+
+  .card__title {
+    color: #666666;
+  }
+}
+
+.card {
+  padding: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: row;
+  grid-template-rows: auto 1fr;
+
+  .card__number {
+    font-size: 18px;
+  }
+
+  .card__title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.service {
+  .service__image1 {
+    grid-area: image1;
+  }
+
+  .service__image2 {
+    grid-area: image2;
+  }
+
+  .service__image3 {
+    grid-area: image3;
+  }
+
+  .service__image4 {
+    grid-area: image4;
+  }
+
+  .service__image5 {
+    grid-area: image5;
+  }
+
+  .service__image6 {
+    grid-area: image6;
+  }
+}
+
+.service {
+  padding-bottom: 100px;
+  display: grid;
+  grid-auto-flow: dense;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-auto-columns: 335px;
+  grid-auto-rows: 250px;
+  grid-template-rows: 640px;
+  grid-template-areas: "image1 image1 image1"
+                       "image2 image3 image4"
+                       "image5 image5 image4"
+                       "image5 image5 image6";
+}
+
+.comment {
+  .comment-content {
+    grid-area: content;
+  }
+
+  .comment-navigator {
+    grid-area: navigator;
+  }
+}
+
+.comment {
+  padding: 100px 0 100px 0;
+  display: grid;
+  justify-content: center;
+  grid-column-gap: 48px;
+  grid-template-columns: 1fr 844px 132px 1fr; 
+  grid-template-areas: ". content navigator ."
+}
+
+.comment-content {
+  .comment-content__start {
+    grid-area: start;
+  }
+
+  .comment-content__line1 {
+    grid-area: line1;
+    color: #666666;
+  }
+
+  .comment-content__line2 {
+    grid-area: line2;
+    color: #666666;
+  }
+  
+  .comment-content__end {
+    grid-area: end;
+  }
+}
+
+.comment-content {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: 25px auto 1fr;
+  grid-template-areas: "start line1 line1"
+                       ". line2 end";
+
+  .comment-content__line1,
+  .comment-content__line2 {
+    font-size: 26px;
+    line-height: 1.69;
+  }
+}
+
+.comment-navigator {
+  .comment__index {
+    color: #999999;
+  }
+}
+
+.comment-navigator {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .comment__index {
+    font-size: 16px;
+  }
+}
+
+.member {
+  padding: 24px 0 24px 0;
+  display: grid;
+  justify-content: center;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, 216px);
+}
+
+.person {
+  .person__name,
+  .person__team,
+  .person__comment {
+    text-align: center;
+  }
+
+  .person__name {
+    color: #333333;
+  }
+
+  .person__team {
+    color: #663399;
+  }
+
+  .person__comment {
+    color: #666666;
+  }
+}
+
+.person {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  grid-auto-rows: auto 30px auto 1fr;
+
+  .person__name {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .person__team {
+    font-size: 14px;
+  }
+
+  .person__comment {
+    font-size: 13px;
+    line-height: 1.69;
+  }
+}
+
+.purplelabs.top-image-container {
+  max-height: 560px;
+
+  .purplelabs.top-image-container__image {
+    min-width: 1280px;
+  }
+}
