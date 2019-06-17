@@ -5,16 +5,11 @@ body .bold { font-weight: 700; }
 body .bolder { font-weight: 800; }
 body .light { font-weight: 300; }
 
-footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { color: #666666; }
-footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { text-decoration: none; }
+footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { color: #666666; text-decoration: none; font-size: 13px; }
 footer .footer__purplelabs { grid-area: purplelabs; }
 footer .footer__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
 footer .footer__recruit { grid-area: recruit; }
 footer .footer__copyright { grid-area: copyright; color: #999999; }
-
-footer { height: 88px; display: grid; align-items: center; grid-column-gap: 30px; grid-template-columns: 1fr auto auto auto 1fr auto 1fr; grid-template-areas: ". purplelabs purplelabs-healthcare recruit . copyright ."; }
-footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { font-size: 13px; }
-footer .footer__copyright { font-size: 11px; }
 
 header { position: fixed; width: 100%; top: 0; }
 header .header__logo-white, header .header__logo-purple, header .header__logo-white--mobile, header .header__logo-purple--mobile { grid-area: logo; }
@@ -33,9 +28,14 @@ header .header__recruit { grid-area: recruit; }
 @media (min-width: 1200px) { header { height: 88px; display: grid; justify-content: center; align-items: center; grid-column-gap: 48px; grid-template-columns: minmax(0, 400px) minmax(573px, 1fr) 66px 132px 33px minmax(0, 400px); grid-template-areas: ". logo purplelabs purplelabs-healthcare recruit ."; }
   header .header__logo-white--mobile, header .header__logo-purple--mobile, header .header__hamburger { display: none; }
   .header .header__logo-purple { display: none; }
-  .header--scrolled .header__logo-white { display: none; } }
+  .header--scrolled .header__logo-white { display: none; }
+  footer { height: 88px; display: grid; align-items: center; grid-column-gap: 30px; grid-template-columns: 1fr auto auto auto 1fr auto 1fr; grid-template-areas: ". purplelabs purplelabs-healthcare recruit . copyright ."; }
+  footer .footer__copyright { font-size: 11px; } }
 @media (max-width: 1199px) { header { height: 64px; display: grid; justify-content: stretch; align-items: center; grid-template-columns: 30px 58px 1fr auto 30px; grid-template-areas: ". logo . hamburger ."; }
   header .header__logo-white--m, header .header__logo-purple--m { height: 32px; }
   header .header__logo-white, header .header__logo-purple, header .header__purplelabs, header .header__purplelabs-healthcare, header .header__recruit { display: none; }
   .header .header__logo-purple--mobile { display: none; }
-  .header--scrolled .header__logo-white--mobile { display: none; } }
+  .header--scrolled .header__logo-white--mobile { display: none; }
+  footer { height: 64px; display: grid; justify-content: center; align-items: center; grid-template-areas: "copyright"; }
+  footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { display: none; }
+  footer .footer__copyright { font-size: 12px; } }
