@@ -50,125 +50,6 @@
   }
 }
 
-.news {
-  .news__title,
-  .article {
-    grid-column: 2;
-  }
-
-  .news__title {
-    border-bottom: 1px solid #999999;
-    color: #333333;
-    text-align: center;
-  }
-}
-
-.article {
-  border-bottom: 1px solid #ebebeb;
-
-  .article__title {
-    grid-area: title;
-    color: #333333;
-  }
-
-  .article__press {
-    grid-area: press;
-    color: #999999;
-  }
-
-  .article__dot {
-    grid-area: dot;
-    color: #cccccc;
-    font-size: 25px;
-  }
-
-  .article__date {
-    grid-area: date;
-    color: #999999;
-  }
-  
-  .article__arrow {
-    grid-area: arrow;
-  }
-}
-
-.directions {
-  background-color: #f5f5f5;
-  overflow: hidden;
-
-}
-
-.directions {
-  .directions__map {
-    grid-area: map;
-    width: 100%;
-  }
-
-  .directions__title {
-    grid-area: title;
-    color: #333333;
-  }
-
-  .directions__address-key,
-  .directions__contact-key {
-    color: #333333;
-  }
-
-  .directions__address-value,
-  .directions__contact-value {
-    color: #666666;
-  }
-
-  .directions__address-key {
-    grid-area: address-key;
-  }
-
-  .directions__address-value {
-    grid-area: address-value;
-  }
-
-  .directions__contact-key {
-    grid-area: contact-key;
-  }
-
-  .directions__contact-value {
-    grid-area: contact-value;
-  }
-}
-
-.directions {
-  display: grid;
-  grid-column-gap: 15px;
-  grid-row-gap: 8px;
-  grid-template-columns: 209fr 209fr minmax(337px, auto) 145fr auto;
-  grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
-  grid-template-areas: ". . . . map"
-                       ". . title . map"
-                       ". . . . map"
-                       ". . address-key . map"
-                       ". . address-value . map"
-                       ". . . . map"
-                       ". . contact-key . map"
-                       ". . contact-value . map"
-                       ". . . . map";
-
-  .directions__map {
-    min-width: 768px;
-  }
-
-  .directions__title {
-    font-size: 28px;
-    line-height: 1.5;
-  }
-
-  .directions__address-key,
-  .directions__contact-key,
-  .directions__address-value,
-  .directions__contact-value {
-    font-size: 13px;
-  }
-}
-
 .history {
   .history__timeline,
   .history__point1,
@@ -239,6 +120,78 @@
     height: 8px;
     margin-top: 5px;
   }
+}
+
+.news {
+  .news__title,
+  .article {
+    grid-column: 2;
+  }
+
+  .news__title {
+    border-bottom: 1px solid #999999;
+    color: #333333;
+    text-align: center;
+  }
+}
+
+.article {
+  border-bottom: 1px solid #ebebeb;
+
+  .article__title {
+    grid-area: title;
+    color: #333333;
+  }
+
+  .article__press {
+    grid-area: press;
+    color: #999999;
+  }
+
+  .article__dot {
+    grid-area: dot;
+    color: #cccccc;
+    font-size: 25px;
+  }
+
+  .article__date {
+    grid-area: date;
+    color: #999999;
+  }
+  
+  .article__arrow {
+    grid-area: arrow;
+  }
+}
+
+.directions {
+  background-color: #f5f5f5;
+  overflow: hidden;
+
+  .directions__address-key,
+  .directions__contact-key {
+    color: #333333;
+  }
+
+  .directions__address-value,
+  .directions__contact-value {
+    color: #666666;
+  }
+
+  .directions__map {
+    grid-area: map;
+    width: 100%;
+  }
+
+  .directions__title {
+    grid-area: title;
+    color: #333333;
+  }
+
+  .directions__address-key { grid-area: address-key; }
+  .directions__address-value { grid-area: address-value; }
+  .directions__contact-key { grid-area: contact-key; }
+  .directions__contact-value { grid-area: contact-value; }
 }
 
 @media (min-width: 1200px) {
@@ -344,6 +297,39 @@
       font-size: 14px;
     }
   }
+
+  .directions {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 8px;
+    grid-template-columns: 209fr 209fr minmax(337px, auto) 145fr auto;
+    grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
+    grid-template-areas: ". . . . map"
+                         ". . title . map"
+                         ". . . . map"
+                         ". . address-key . map"
+                         ". . address-value . map"
+                         ". . . . map"
+                         ". . contact-key . map"
+                         ". . contact-value . map"
+                         ". . . . map";
+  
+    .directions__map {
+      min-width: 768px;
+    }
+  
+    .directions__title {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+  
+    .directions__address-key,
+    .directions__contact-key,
+    .directions__address-value,
+    .directions__contact-value {
+      font-size: 13px;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -444,6 +430,39 @@
     }
 
     .article__date {
+      font-size: 13px;
+    }
+  }
+  
+  .directions {
+    padding-top: 50px;
+    display: grid;
+    grid-row-gap: 6px;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: auto 24px auto auto 14px auto 58px 1fr;
+    grid-template-areas: ". title ." 
+                         ". . ." 
+                         ". address-key ."
+                         ". address-value ."
+                         ". . ."
+                         ". contact-key ."
+                         ". contact-value ."
+                         ". . ."
+                         "map map map";
+  
+    .directions__map {
+      min-width: 768px;
+    }
+  
+    .directions__title {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+  
+    .directions__address-key,
+    .directions__contact-key,
+    .directions__address-value,
+    .directions__contact-value {
       font-size: 13px;
     }
   }
