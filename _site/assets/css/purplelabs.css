@@ -54,6 +54,18 @@
 
 .service { padding-bottom: 100px; display: grid; grid-auto-flow: dense; justify-content: center; grid-gap: 10px; grid-auto-columns: 335px; grid-auto-rows: 250px; grid-template-rows: 640px; grid-template-areas: "image1 image1 image1" "image2 image3 image4" "image2 image6 image6" "image5 image6 image6"; }
 
+.member { padding: 24px 0 24px 0; display: grid; justify-content: center; grid-gap: 40px; grid-template-columns: repeat(4, 216px); }
+
+.person .person__name, .person .person__team, .person .person__comment { text-align: center; }
+.person .person__name { color: #333333; }
+.person .person__team { color: #663399; }
+.person .person__comment { color: #666666; }
+
+.person { display: grid; grid-auto-flow: row; grid-gap: 10px; grid-auto-rows: auto 30px auto 1fr; }
+.person .person__name { margin-top: 10px; font-size: 18px; }
+.person .person__team { font-size: 14px; }
+.person .person__comment { font-size: 13px; line-height: 1.69; }
+
 .purplelabs.top-image-container { max-height: 560px; }
 .purplelabs.top-image-container .purplelabs.top-image-container__image { min-width: 1280px; }
 
