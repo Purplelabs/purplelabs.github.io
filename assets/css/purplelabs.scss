@@ -123,38 +123,17 @@
     text-align: center;
     color: #333333;
   }
-
-  .card01 {
-    grid-area: card01;
-  }
-
-  .card02 {
-    grid-area: card02;
-  }
-
-  .card03 {
-    grid-area: card03;
-  }
-
-  .card04 {
-    grid-area: card04;
-  }
-
-  .card05 {
-    grid-area: card05;
-  }
 }
 
 .goal {
   padding: 100px 0 100px 0;
   display: grid;
+  justify-content: center;
   grid-gap: 10px;
   grid-auto-rows: 180px;
-  grid-template-columns: 1fr repeat(3, 335px) 1fr;
+  grid-template-columns: repeat(3, 335px);
   grid-template-rows: 70px;
-  grid-template-areas: ". title title title ."
-                       ". card01 card02 card03 ."
-                       ". card04 card05 . .";
+  grid-template-areas: "title title title";
   .goal__title {
     font-size: 36px;
   }
