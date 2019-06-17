@@ -1,0 +1,149 @@
+---
+---
+.top-image-container,
+.bottom-image-container {
+  overflow: hidden;
+  position: relative;
+
+  .top-image-container__image,
+  .bottom-image-container__image {
+    width: 100%;
+  }
+
+  .bottom-text-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.purplelabs-healthcare.top-image-container {
+  max-height: 560px;
+
+  .purplelabs-healthcare.top-image-container__image {
+    min-width: 1280px;
+  }
+}
+
+.purplelabs-healthcare.bottom-image-container {
+  max-height: 400px;
+
+  .purplelabs-healthcare.bottom-image-container__image {
+    min-width: 1280px;
+  }
+}
+
+.tab {
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  .tab__company,
+  .tab__service,
+  .tab__member {
+    flex-basis: 340px;
+    padding: 25px 0 25px 0;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.2;
+    color: #333333;
+  }
+}
+
+.company {
+  .slogan {
+    grid-area: slogan;
+  }
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    color: #666666;
+  }
+
+  .paragraph1 {
+    grid-area: paragraph1;
+  }
+
+  .paragraph2 {
+    grid-area: paragraph2;
+  }
+
+  .paragraph3 {
+    grid-area: paragraph3;
+  }
+
+  .paragraph4 {
+    grid-area: paragraph4;
+  }
+}
+
+.company {
+  padding: 100px 0 100px 0;
+  display: grid;
+  grid-column-gap: 48px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr repeat(2, 512px) 1fr;
+  grid-template-areas: ". slogan paragraph1 ."
+                       ". slogan paragraph2 ."
+                       ". slogan paragraph3 ."
+                       ". slogan paragraph4 .";
+
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.slogan {
+  .slogan__open {
+    grid-area: open;
+  }
+
+  .slogan-container__line1,
+  .slogan-container__line2,
+  .slogan-container__line3,
+  .slogan-container__line4 {
+    color: #666666;
+  }
+
+  .slogan__line-start {
+    grid-area: line-start;
+  }
+
+  .slogan__lines {
+    grid-area: lines;
+  }
+
+  .slogan__line-end {
+    grid-area: line-end;
+  }
+
+  .slogan__close {
+    grid-area: close;
+  }
+}
+
+.slogan {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(2, auto) 1fr;
+  grid-template-rows: repeat(2, auto) 1fr;
+  grid-template-areas: "open line-start line-start"
+                       ". lines lines"
+                       ". line-end close";
+
+  .slogan__line-start,
+  .slogan__lines,
+  .slogan__line-end {
+    font-size: 36px;
+    line-height: 1.61;
+  }
+}
