@@ -1,0 +1,16 @@
+.top-image-container, .bottom-image-container { overflow: hidden; position: relative; }
+.top-image-container .top-image-container__image, .top-image-container .bottom-image-container__image, .bottom-image-container .top-image-container__image, .bottom-image-container .bottom-image-container__image { width: 100%; }
+.top-image-container .bottom-text-container, .bottom-image-container .bottom-text-container { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+.purplelabs.top-image-container { max-height: 560px; }
+.purplelabs.top-image-container .purplelabs.top-image-container__image { min-width: 1280px; }
+
+.purplelabs.bottom-image-container { max-height: 400px; }
+.purplelabs.bottom-image-container .purplelabs.bottom-image-container__image { min-width: 1280px; }
+
+.purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { color: white; }
+.purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { color: white; text-align: center; }
+
+.purplelabs.bottom-text-container { margin: 140px 30px 140px 30px; display: grid; grid-gap: 20px; justify-items: center; align-items: center; grid-template-rows: auto auto; }
+.purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { font-size: 36px; line-height: 1.5; }
+.purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { font-size: 16px; line-height: 1.88; }
