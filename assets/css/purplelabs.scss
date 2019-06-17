@@ -205,8 +205,11 @@
   .tab__service,
   .tab__member {
     flex-basis: 340px;
-    text-align: center;
     padding: 25px 0 25px 0;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.2;
+    color: #333333;
   }
 }
 
