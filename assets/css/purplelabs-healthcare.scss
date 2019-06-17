@@ -269,3 +269,130 @@
                        "image5 image5 image4"
                        "image5 image5 image6";
 }
+
+.comment {
+  .comment-content {
+    grid-area: content;
+  }
+
+  .comment-navigator {
+    grid-area: navigator;
+  }
+}
+
+.comment {
+  padding: 100px 0 100px 0;
+  display: grid;
+  justify-content: center;
+  grid-column-gap: 48px;
+  grid-template-columns: 1fr 844px 132px 1fr; 
+  grid-template-areas: ". content navigator ."
+}
+
+.comment-content {
+  .comment-content__start {
+    grid-area: start;
+  }
+
+  .comment-content__line1 {
+    grid-area: line1;
+    color: #666666;
+  }
+
+  .comment-content__line2 {
+    grid-area: line2;
+    color: #666666;
+  }
+  
+  .comment-content__end {
+    grid-area: end;
+  }
+}
+
+.comment-content {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: 25px auto 1fr;
+  grid-template-areas: "start line1 line1"
+                       ". line2 end";
+
+  .comment-content__line1,
+  .comment-content__line2 {
+    font-size: 26px;
+    line-height: 1.69;
+  }
+}
+
+.comment-navigator {
+  .comment__index {
+    color: #999999;
+  }
+}
+
+.comment-navigator {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .comment__index {
+    font-size: 16px;
+  }
+}
+
+.member {
+  padding: 24px 0 24px 0;
+  display: grid;
+  justify-content: center;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, 216px);
+}
+
+.person {
+  .person__name,
+  .person__team,
+  .person__comment {
+    text-align: center;
+  }
+
+  .person__name {
+    color: #333333;
+  }
+
+  .person__team {
+    color: #663399;
+  }
+
+  .person__comment {
+    color: #666666;
+  }
+}
+
+.person {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  grid-auto-rows: auto 30px auto 1fr;
+
+  .person__name {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .person__team {
+    font-size: 14px;
+  }
+
+  .person__comment {
+    font-size: 13px;
+    line-height: 1.69;
+  }
+}
+
+.purplelabs.top-image-container {
+  max-height: 560px;
+
+  .purplelabs.top-image-container__image {
+    min-width: 1280px;
+  }
+}
