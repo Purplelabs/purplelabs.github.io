@@ -363,10 +363,7 @@
 }
 
 .purplelabs.bottom-text-container {
-  .purplelabs.bottom-text-container__title {
-    color: white;
-  }
-  
+  .purplelabs.bottom-text-container__title,
   .purplelabs.bottom-text-container__content {
     color: white;
     text-align: center;
@@ -377,9 +374,8 @@
   margin: 140px 30px 140px 30px;
   display: grid;
   grid-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
   
   .purplelabs.bottom-text-container__title {
     font-size: 36px;
