@@ -375,7 +375,7 @@
     display: grid;
     justify-content: center;
     grid-gap: 50px;
-    grid-template-columns: repeat(auto-fill, 261px);
+    grid-template-columns: repeat(auto-fill, minmax(261px, 345px));
   }
 
   .purplelabs.bottom-text-container {
