@@ -16,7 +16,7 @@ script: assets/js/purplelabs-healthcare.js
 
 <section class="company">
   {% include company/slogan.html 
-    line-start = "고객들의 삶에" lines = "베스트 파트너가 되기 위해<br/>디지털 풀스택 <br/>헬스케어 커머스를" line-end = "추구합니다." %}
+    line-start = "고객들의 삶에" lines = "베스트 파트너가 되기 위해<br/>디지털 풀스택 <br/>헬스케어 커머스를" line-end = "추구합니다." mobile = "“소비자, 공급자 모두가 Win-Win하는 오프라인 혁신을 목표로 합니다.”" %}
   
   <p class="normal paragraph1">
     지금까지 모든 소비재 회사들은 오프라인을 통해 성장하였으나 앞으로의 오프라인은 Z세대, 밀레니얼세대 더불어 대부분의 사람들에게 정확한 정보와 합리적인 소비의 채널로는 부족할 것 입니다.
@@ -50,12 +50,30 @@ script: assets/js/purplelabs-healthcare.js
 </section>
 
 <section class="service" style="display: none;">
-  <img class="service__image1" src="assets/images/banner-plh-02-service-middle.svg">
-  <img class="service__image2" src="assets/images/img-plh-02-service-1.png" srcset="assets/images/img-plh-02-service-1@2x.png 2x, assets/images/img-plh-02-service-1@3x.png 3x">
-  <img class="service__image3" src="assets/images/img-plh-02-service-2.png" srcset="assets/images/img-plh-02-service-2@2x.png 2x, assets/images/img-plh-02-service-2@3x.png 3x">
-  <img class="service__image4" src="assets/images/img-plh-02-service-3.png" srcset="assets/images/img-plh-02-service-3@2x.png 2x, assets/images/img-plh-02-service-3@3x.png 3x">
-  <img class="service__image5" src="assets/images/img-plh-02-service-4.png" srcset="assets/images/img-plh-02-service-4@2x.png 2x, assets/images/img-plh-02-service-4@3x.png 3x">
-  <img class="service__image6" src="assets/images/img-plh-02-service-5.svg">
+  <div class="service-description">
+    <img class="service-description__logo" src="assets/images/purplelabs-healthcare/logo-serybox.png" srcset="assets/images/purplelabs-healthcare/logo-serybox@2x.png 2x, assets/images/purplelabs-healthcare/logo-serybox@3x.png 3x">
+    <p class="normal service-description__title">당신의 건강한 아름다움을 <br class="desktop-br"/>추구합니다.</p>
+    <p class="normal service-description__button">사이트 바로가기 ></p>
+  </div>
+
+  <div class="service__container1">
+      <img class="service__image1" src="assets/images/banner-plh-02-service-middle.svg">
+  </div>
+  <div class="service__container2">
+      <img class="service__image2" src="assets/images/img-plh-02-service-1.png" srcset="assets/images/img-plh-02-service-1@2x.png 2x, assets/images/img-plh-02-service-1@3x.png 3x">
+  </div>
+  <div class="service__container3">
+    <img class="service__image3" src="assets/images/img-plh-02-service-2.png" srcset="assets/images/img-plh-02-service-2@2x.png 2x, assets/images/img-plh-02-service-2@3x.png 3x">
+  </div>
+  <div class="service__container4">
+    <img class="service__image4" src="assets/images/img-plh-02-service-3.png" srcset="assets/images/img-plh-02-service-3@2x.png 2x, assets/images/img-plh-02-service-3@3x.png 3x">
+  </div>
+  <div class="service__container5">
+    <img class="service__image5" src="assets/images/img-plh-02-service-4.png" srcset="assets/images/img-plh-02-service-4@2x.png 2x, assets/images/img-plh-02-service-4@3x.png 3x">
+  </div>
+  <div class="service__container6">
+    <img class="service__image6" src="assets/images/img-plh-02-service-5.svg">
+  </div>
 </section>
 
 <section class="comment" style="display: none;">
@@ -64,12 +82,16 @@ script: assets/js/purplelabs-healthcare.js
     <p class="light comment-content__line1">원하는 만큼, 본인의 노력만큼 초고속 승진 가능!</p>
     <p class="light comment-content__line2">무한한 자기 성장, 교육기회 부여하는 핫한 회사!</p>
     <img class="comment-content__end" src="assets/images/ic-talkbox-end.svg">
+
+    <p class="normal comment-content__mobile">
+      “성장하기 직전의 긍정적인 에너지가 있습니다. 좋은 사업 아이템, 좋은 멤버들과 함께 근무할 수 있어 좋습니다.”
+    </p>
   </div>
 
   <div class="comment-navigator">
-    <img src="assets/images/ic-arrow-left.svg" class="ic_arrow_left">
-    <p class="normal comment__index">1/4</p>
-    <img src="assets/images/ic-arrow-right.svg" class="ic_arrow_right">
+    <img class="comment-navigator__left-arrow" src="assets/images/ic-arrow-left.svg">
+    <p class="normal comment-navigator__index">1/4</p>
+    <img class="comment-navigator__right-arrow" src="assets/images/ic-arrow-right.svg">
   </div>
 </section>
 
