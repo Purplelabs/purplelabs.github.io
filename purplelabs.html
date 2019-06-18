@@ -34,16 +34,9 @@ script: assets/js/purplelabs.js
 
 <section class="goal">
   <p class="light goal__title">우리가 추구하는 것</p>
-  {% include company/card.html
-    number = "01" title = "매출과 이익" %}
-  {% include company/card.html
-    number = "02" title = "절대품질, 절대가격을<br/>통한 합리적 프리미엄" %}
-  {% include company/card.html
-    number = "03" title = "오프라인 혁신을 통한<br/>고객의 라이프 파트너" %}
-  {% include company/card.html
-    number = "04" title = "데이터에 기반한<br/>상호작용" %}
-  {% include company/card.html
-    number = "05" title = "고객과의 신뢰" %}
+  {% for goal in site.data.purplelabs__goals %}
+    {% include company/card.html number = goal.number title = goal.title %}
+  {% endfor %}
 </section>
 
 <section class="service" style="display: none;">
