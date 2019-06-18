@@ -2,15 +2,6 @@
 .top-image-container .top-image-container__image, .top-image-container .bottom-image-container__image, .bottom-image-container .top-image-container__image, .bottom-image-container .bottom-image-container__image { width: 100%; position: relative; left: 50%; transform: translateX(-50%); }
 .top-image-container .bottom-text-container, .bottom-image-container .bottom-text-container { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
-.service .service__image1 { grid-area: image1; }
-.service .service__image2 { grid-area: image2; }
-.service .service__image3 { grid-area: image3; }
-.service .service__image4 { grid-area: image4; }
-.service .service__image5 { grid-area: image5; }
-.service .service__image6 { grid-area: image6; }
-
-.service { padding-bottom: 100px; display: grid; grid-auto-flow: dense; justify-content: center; grid-gap: 10px; grid-auto-columns: 335px; grid-auto-rows: 250px; grid-template-rows: 640px; grid-template-areas: "image1 image1 image1" "image2 image3 image4" "image2 image6 image6" "image5 image6 image6"; }
-
 .comment .comment-content { grid-area: content; }
 .comment .comment-navigator { grid-area: navigator; }
 
@@ -62,7 +53,18 @@
   .goal .goal__title { font-size: 36px; }
   .card { display: grid; grid-gap: 20px; grid-auto-flow: row; grid-template-rows: auto 1fr; }
   .card .card__number { font-size: 18px; }
-  .card .card__title { font-size: 24px; line-height: 1.5; } }
+  .card .card__title { font-size: 24px; line-height: 1.5; }
+  .service { padding-bottom: 100px; display: grid; grid-auto-flow: dense; justify-content: center; grid-gap: 10px; grid-auto-columns: 335px; grid-auto-rows: 250px; grid-template-rows: 640px; grid-template-areas: "image1 image1 image1" "image2 image3 image4" "image2 image6 image6" "image5 image6 image6"; }
+  .service .service-description, .service .service__container1 { grid-area: image1; }
+  .service .service__container2 { grid-area: image2; }
+  .service .service__container3 { grid-area: image3; }
+  .service .service__container4 { grid-area: image4; }
+  .service .service__container5 { grid-area: image5; }
+  .service .service__container6 { grid-area: image6; }
+  .service-description { z-index: 2; padding: 200px 0 0 40px; display: grid; grid-auto-flow: row; justify-items: start; align-items: start; grid-gap: 15px; grid-template-rows: 45px minmax(73px, auto) 1fr; }
+  .service-description .service-description__logo { width: 185px; }
+  .service-description .service-description__title { width: 185px; font-size: 24px; line-height: 1.42; }
+  .service-description .service-description__button { font-size: 14px; padding: 8px 15px 8px 15px; border-radius: 10px; } }
 @media (max-width: 1199px) { .tab { height: 60px; }
   .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 21px 0 21px 0; font-size: 16px; }
   .company { padding: 50px 0 50px 0; display: grid; grid-row-gap: 20px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 10px; grid-template-areas: ". slogan ." ". . ." ". paragraph1 ." ". paragraph2 ." ". paragraph3 ." ". paragraph4 ."; }
@@ -72,7 +74,13 @@
   .goal .goal__title { font-size: 28px; }
   .card { display: grid; grid-gap: 12px; grid-auto-flow: row; grid-template-rows: auto 1fr; }
   .card .card__number { font-size: 16px; }
-  .card .card__title { font-size: 20px; line-height: 1.6; } }
+  .card .card__title { font-size: 20px; line-height: 1.6; }
+  .service { padding: 80px 0 10px 0; display: grid; justify-content: center; grid-gap: 10px; grid-template-columns: repeat(auto-fill, 320px); grid-auto-rows: 240px; grid-template-rows: auto minmax(400px, auto); }
+  .service .service-description, .service .service__container1 { grid-column: 1 / -1; }
+  .service-description { padding-bottom: 10px; display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 15px; }
+  .service-description .service-description__title { text-align: center; font-size: 18px; }
+  .service-description .service-description__title-br { display: none; }
+  .service-description .service-description__button { font-size: 12px; padding: 8px 12px 8px 12px; border-radius: 16px; } }
 .tab { display: flex; justify-content: center; align-items: stretch; }
 .tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; text-align: center; opacity: 0.2; color: #333333; }
 
@@ -97,3 +105,10 @@
 .card { background-color: white; padding: 30px; }
 .card .card__number { color: #663399; }
 .card .card__title { color: #666666; }
+
+.service .service__image1 { min-width: 640px; position: relative; left: 50%; transform: translateX(-50%); }
+.service .service__container1, .service .service__container2, .service .service__container3, .service .service__container4, .service .service__container5, .service .service__container6 { overflow: hidden; }
+.service .service__image1, .service .service__image2, .service .service__image3, .service .service__image4, .service .service__image5, .service .service__image6 { width: 100%; }
+
+.service-description .service-description__title { color: #666666; }
+.service-description .service-description__button { background-color: #66339933; color: #663399; }
