@@ -22,55 +22,6 @@
   }
 }
 
-.member {
-  padding: 24px 0 24px 0;
-  display: grid;
-  justify-content: center;
-  grid-gap: 40px;
-  grid-template-columns: repeat(4, 216px);
-}
-
-.person {
-  .person__name,
-  .person__team,
-  .person__comment {
-    text-align: center;
-  }
-
-  .person__name {
-    color: #333333;
-  }
-
-  .person__team {
-    color: #663399;
-  }
-
-  .person__comment {
-    color: #666666;
-  }
-}
-
-.person {
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  grid-auto-rows: auto 30px auto 1fr;
-
-  .person__name {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-
-  .person__team {
-    font-size: 14px;
-  }
-
-  .person__comment {
-    font-size: 13px;
-    line-height: 1.69;
-  }
-}
-
 .purplelabs.top-image-container {
   max-height: 560px;
 
@@ -112,7 +63,6 @@
     line-height: 1.88;
   }
 }
-
 
 @media (min-width: 1200px) {
   .tab {
@@ -274,6 +224,14 @@
       font-size: 16px;
     }
   }
+
+  .member {
+    padding: 24px 0 24px 0;
+    display: grid;
+    justify-content: center;
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, 216px);
+  }
 }
 
 @media (max-width: 1199px) {
@@ -414,6 +372,14 @@
     .comment-navigator__index {
       font-size: 14px;
     }
+  }
+
+  .member {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fill, 261px);
   }
 }
 
@@ -557,5 +523,36 @@
 .comment-navigator {
   .comment-navigator__index {
     color: #999999;
+  }
+}
+
+.person {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-gap: 10px;
+  grid-template-rows: auto 30px auto auto;
+
+  .person__name,
+  .person__team,
+  .person__comment {
+    text-align: center;
+  }
+
+  .person__name {
+    color: #333333;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .person__team {
+    color: #663399;
+    font-size: 14px;
+  }
+
+  .person__comment {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.69;
   }
 }

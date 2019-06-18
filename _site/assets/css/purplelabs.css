@@ -2,18 +2,6 @@
 .top-image-container .top-image-container__image, .top-image-container .bottom-image-container__image, .bottom-image-container .top-image-container__image, .bottom-image-container .bottom-image-container__image { width: 100%; position: relative; left: 50%; transform: translateX(-50%); }
 .top-image-container .bottom-text-container, .bottom-image-container .bottom-text-container { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
-.member { padding: 24px 0 24px 0; display: grid; justify-content: center; grid-gap: 40px; grid-template-columns: repeat(4, 216px); }
-
-.person .person__name, .person .person__team, .person .person__comment { text-align: center; }
-.person .person__name { color: #333333; }
-.person .person__team { color: #663399; }
-.person .person__comment { color: #666666; }
-
-.person { display: grid; grid-auto-flow: row; grid-gap: 10px; grid-auto-rows: auto 30px auto 1fr; }
-.person .person__name { margin-top: 10px; font-size: 18px; }
-.person .person__team { font-size: 14px; }
-.person .person__comment { font-size: 13px; line-height: 1.69; }
-
 .purplelabs.top-image-container { max-height: 560px; }
 .purplelabs.top-image-container .purplelabs.top-image-container__image { min-width: 960px; }
 
@@ -56,7 +44,8 @@
   .comment-content .comment-content__line2 { grid-area: line2; }
   .comment-content .comment-content__end { grid-area: end; }
   .comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
-  .comment-navigator .comment__index { font-size: 16px; } }
+  .comment-navigator .comment__index { font-size: 16px; }
+  .member { padding: 24px 0 24px 0; display: grid; justify-content: center; grid-gap: 40px; grid-template-columns: repeat(4, 216px); } }
 @media (max-width: 1199px) { .tab { height: 60px; }
   .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 21px 0 21px 0; font-size: 16px; }
   .company { padding: 50px 0 50px 0; display: grid; grid-row-gap: 20px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 10px; grid-template-areas: ". slogan ." ". . ." ". paragraph1 ." ". paragraph2 ." ". paragraph3 ." ". paragraph4 ."; }
@@ -77,7 +66,8 @@
   .comment-content .comment-content__start, .comment-content .comment-content__line1, .comment-content .comment-content__line2, .comment-content .comment-content__end { display: none; }
   .comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
   .comment-navigator .comment-navigator__left-arrow, .comment-navigator .comment-navigator__right-arrow { display: none; }
-  .comment-navigator .comment-navigator__index { font-size: 14px; } }
+  .comment-navigator .comment-navigator__index { font-size: 14px; }
+  .member { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 50px; grid-template-columns: repeat(auto-fill, 261px); } }
 .tab { display: flex; justify-content: center; align-items: stretch; }
 .tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; text-align: center; opacity: 0.2; color: #333333; }
 
@@ -117,3 +107,9 @@
 .comment-content .comment-content__mobile { font-size: 20px; line-height: 1.8; color: #666666; text-align: center; }
 
 .comment-navigator .comment-navigator__index { color: #999999; }
+
+.person { display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 10px; grid-template-rows: auto 30px auto auto; }
+.person .person__name, .person .person__team, .person .person__comment { text-align: center; }
+.person .person__name { color: #333333; margin-top: 10px; font-size: 18px; }
+.person .person__team { color: #663399; font-size: 14px; }
+.person .person__comment { color: #666666; font-size: 13px; line-height: 1.69; }
