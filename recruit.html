@@ -16,42 +16,20 @@ stylesheet: assets/css/recruit.css
 
 <section class="purple-culture">
   <p class="purple-culture__title">복지와 문화</p>
+  {% for purple-culture in site.data.recruit__purple-cultures %}
+    {% if purple-culture.divider %}
+      <div class="culture divider">
+    {% else %}
+      <div class="culture">
+    {% endif %}
+        <p class="normal culture__title">{{ purple-culture.title }}</p> 
 
-  <div class="culture divider">
-    <p class="normal culture__title">효율적인 근무 환경을 <br class="desktop-br"/>추구합니다.</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">유연 근무제 실시</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">조기 출근 포인트 적립 시 월급 외 추가 지급</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">까페에서 원격 근무 가능</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">자율적 휴가 사용</p>
-  </div>
-
-  <div class="culture divider">
-    <p class="normal culture__title">효율적인 근무 환경을 <br class="desktop-br"/>추구합니다.</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">유연 근무제 실시</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">조기 출근 포인트 적립 시 월급 외 추가 지급</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">까페에서 원격 근무 가능</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">자율적 휴가 사용</p>
-  </div>
-
-  <div class="culture">
-    <p class="normal culture__title">효율적인 근무 환경을 <br class="desktop-br"/>추구합니다.</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">유연 근무제 실시</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">조기 출근 포인트 적립 시 월급 외 추가 지급</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">까페에서 원격 근무 가능</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">자율적 휴가 사용</p>
-  </div>
+        {% for content in purple-culture.contents %}
+          <div class="culture__dot"></div>
+          <p class="normal culture__content">{{ content.text }}</p>
+        {% endfor %}
+      </div>
+  {% endfor %}
 </section>
 
 <section class="recruit bottom-image-container">
