@@ -2,24 +2,6 @@
 .top-image-container .top-image-container__image, .top-image-container .bottom-image-container__image, .bottom-image-container .top-image-container__image, .bottom-image-container .bottom-image-container__image { width: 100%; position: relative; left: 50%; transform: translateX(-50%); }
 .top-image-container .bottom-text-container, .bottom-image-container .bottom-text-container { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
-.comment .comment-content { grid-area: content; }
-.comment .comment-navigator { grid-area: navigator; }
-
-.comment { padding: 100px 0 100px 0; display: grid; justify-content: center; grid-column-gap: 48px; grid-template-columns: 1fr 844px 132px 1fr; grid-template-areas: ". content navigator ."; }
-
-.comment-content .comment-content__start { grid-area: start; }
-.comment-content .comment-content__line1 { grid-area: line1; color: #666666; }
-.comment-content .comment-content__line2 { grid-area: line2; color: #666666; }
-.comment-content .comment-content__end { grid-area: end; }
-
-.comment-content { display: grid; grid-column-gap: 15px; grid-template-columns: 25px auto 1fr; grid-template-areas: "start line1 line1" ". line2 end"; }
-.comment-content .comment-content__line1, .comment-content .comment-content__line2 { font-size: 26px; line-height: 1.69; }
-
-.comment-navigator .comment__index { color: #999999; }
-
-.comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
-.comment-navigator .comment__index { font-size: 16px; }
-
 .member { padding: 24px 0 24px 0; display: grid; justify-content: center; grid-gap: 40px; grid-template-columns: repeat(4, 216px); }
 
 .person .person__name, .person .person__team, .person .person__comment { text-align: center; }
@@ -64,7 +46,17 @@
   .service-description { z-index: 2; padding: 200px 0 0 40px; display: grid; grid-auto-flow: row; justify-items: start; align-items: start; grid-gap: 15px; grid-template-rows: 45px minmax(73px, auto) 1fr; }
   .service-description .service-description__logo { width: 185px; }
   .service-description .service-description__title { width: 185px; font-size: 24px; line-height: 1.42; }
-  .service-description .service-description__button { font-size: 14px; padding: 8px 15px 8px 15px; border-radius: 10px; } }
+  .service-description .service-description__button { font-size: 14px; padding: 8px 15px 8px 15px; border-radius: 10px; }
+  .comment { padding: 100px 0 100px 0; display: grid; justify-content: center; grid-column-gap: 48px; grid-template-columns: 1fr 844px 132px 1fr; grid-template-areas: ". content navigator ."; }
+  .comment-content { display: grid; grid-column-gap: 15px; grid-template-columns: 25px auto 1fr; grid-template-areas: "start line1 line1" ". line2 end"; }
+  .comment-content .comment-content__line1, .comment-content .comment-content__line2 { font-size: 26px; line-height: 1.69; }
+  .comment-content .comment-content__mobile { display: none; }
+  .comment-content .comment-content__start { grid-area: start; }
+  .comment-content .comment-content__line1 { grid-area: line1; }
+  .comment-content .comment-content__line2 { grid-area: line2; }
+  .comment-content .comment-content__end { grid-area: end; }
+  .comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
+  .comment-navigator .comment__index { font-size: 16px; } }
 @media (max-width: 1199px) { .tab { height: 60px; }
   .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 21px 0 21px 0; font-size: 16px; }
   .company { padding: 50px 0 50px 0; display: grid; grid-row-gap: 20px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 10px; grid-template-areas: ". slogan ." ". . ." ". paragraph1 ." ". paragraph2 ." ". paragraph3 ." ". paragraph4 ."; }
@@ -80,7 +72,12 @@
   .service-description { padding-bottom: 10px; display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 15px; }
   .service-description .service-description__title { text-align: center; font-size: 18px; }
   .service-description .service-description__title-br { display: none; }
-  .service-description .service-description__button { font-size: 12px; padding: 8px 12px 8px 12px; border-radius: 16px; } }
+  .service-description .service-description__button { font-size: 12px; padding: 8px 12px 8px 12px; border-radius: 16px; }
+  .comment { padding: 50px 30px 50px 30px; display: grid; justify-items: center; grid-gap: 20px; grid-template-areas: "content" "navigator"; }
+  .comment-content .comment-content__start, .comment-content .comment-content__line1, .comment-content .comment-content__line2, .comment-content .comment-content__end { display: none; }
+  .comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
+  .comment-navigator .comment-navigator__left-arrow, .comment-navigator .comment-navigator__right-arrow { display: none; }
+  .comment-navigator .comment-navigator__index { font-size: 14px; } }
 .tab { display: flex; justify-content: center; align-items: stretch; }
 .tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; text-align: center; opacity: 0.2; color: #333333; }
 
@@ -112,3 +109,11 @@
 
 .service-description .service-description__title { color: #666666; }
 .service-description .service-description__button { background-color: #66339933; color: #663399; }
+
+.comment .comment-content { grid-area: content; }
+.comment .comment-navigator { grid-area: navigator; }
+
+.comment-content .comment-content__line1, .comment-content .comment-content__line2 { font-size: 26px; line-height: 1.69; color: #666666; }
+.comment-content .comment-content__mobile { font-size: 20px; line-height: 1.8; color: #666666; text-align: center; }
+
+.comment-navigator .comment-navigator__index { color: #999999; }
