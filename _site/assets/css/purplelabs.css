@@ -55,7 +55,7 @@
   .card { display: grid; grid-gap: 12px; grid-auto-flow: row; grid-template-rows: auto 1fr; }
   .card .card__number { font-size: 16px; }
   .card .card__title { font-size: 20px; line-height: 1.6; }
-  .service { padding: 80px 0 10px 0; display: grid; justify-content: center; grid-gap: 10px; grid-template-columns: repeat(auto-fill, 320px); grid-auto-rows: 240px; grid-template-rows: auto minmax(400px, auto); }
+  .service { padding: 80px 0 10px 0; display: grid; justify-content: center; grid-gap: 10px; grid-template-columns: repeat(auto-fill, minmax(320px, 379px)); grid-auto-rows: 240px; grid-template-rows: auto minmax(400px, auto); }
   .service .service-description, .service .service__container1 { grid-column: 1 / -1; }
   .service-description { padding-bottom: 10px; display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 15px; }
   .service-description .service-description__title { text-align: center; font-size: 18px; }
