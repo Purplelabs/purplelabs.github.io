@@ -41,4 +41,5 @@ header .header__recruit { grid-area: recruit; }
   .header--scrolled .header__logo-white--mobile { display: none; }
   footer { height: 64px; display: grid; justify-content: center; align-items: center; }
   footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit, footer .footer__copyright--default { display: none; }
-  footer .footer__copyright--mobile { font-size: 12px; } }
+  footer .footer__copyright--mobile { font-size: 12px; }
+  .desktop-br { display: none; } }
