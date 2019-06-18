@@ -1,0 +1,124 @@
+---
+layout: default
+title: purplelabs
+stylesheet: assets/css/purplelabs-healthcare.css
+script: assets/js/purplelabs-healthcare.js
+---
+<section class="purplelabs-healthcare top-image-container">
+  <img class="purplelabs-healthcare top-image-container__image"
+  src="assets/images/purplelabs-healthcare/banner-plh-mainvisual.png"
+  srcset="assets/images/purplelabs-healthcare/banner-plh-mainvisual@2x.png 2x, assets/images/purplelabs-healthcare/banner-plh-mainvisual@3x.png 3x">
+</section>
+
+<section class="tab">
+  <p class="bold tab__company">회사소개</p>
+  <p class="bold tab__service">서비스</p>
+  <p class="bold tab__member">멤버</p>
+</section>
+
+<section class="company">
+  {% include company/slogan.html 
+    line-start = "고객들의 삶에" lines = "베스트 파트너가 되기 위해<br/>디지털 풀스택 <br/>헬스케어 커머스를" line-end = "추구합니다." mobile = "“소비자, 공급자 모두가 Win-Win하는 오프라인 혁신을 목표로 합니다.”" %}
+  
+  <p class="normal paragraph1">
+    지금까지 모든 소비재 회사들은 오프라인을 통해 성장하였으나 앞으로의 오프라인은 Z세대, 밀레니얼세대 더불어 대부분의 사람들에게 정확한 정보와 합리적인 소비의 채널로는 부족할 것 입니다.
+  </p>
+  <p class="normal paragraph2">
+    퍼플랩스 헬스케어팀은 고객과의 신뢰 그리고 높은 수준의 만족을 유지하면서 고객들의 지속가능한 삶(헬스&뷰티)에 베스트 파트너가 되기 위해 디지털 풀스택 헬스케어 커머스를 추구합니다.
+  </p>
+  <p class="normal paragraph3">
+    기존의 헬스케어 기업들은 매우 오랫동안 디지털과 많은 거리를 두며 고객들에게 정말 필요한 상품과 정확한 정보, 합리적인 가격을 제시하지 못했습니다.
+  </p>
+  <p class="normal paragraph4">
+    우리는 기존의 오프라인 유통과 달리 디지털 풀스텍 헬스케어를 통해 더욱 쉽고 빠르게 적은 비용으로 고객을 좀 더 자세히 정확히 알아갈 수 있습니다.<br/>
+    이를 통해 최고의 상품으로 고객과의 신뢰를 공고하게 이뤄 내겠습니다.
+  </p>
+</section>
+
+<section class="goal">
+  <p class="light goal__title">우리가 추구하는 것</p>
+  {% for goal in site.data.purplelabs-healthcare__goals %}
+    {% include company/card.html number = goal.number title = goal.title %}
+  {% endfor %}
+</section>
+
+<section class="service" style="display: none;">
+  <div class="service-description">
+    <img class="service-description__logo" src="assets/images/purplelabs-healthcare/logo-serybox.png" srcset="assets/images/purplelabs-healthcare/logo-serybox@2x.png 2x, assets/images/purplelabs-healthcare/logo-serybox@3x.png 3x">
+    <p class="normal service-description__title">당신의 건강한 아름다움을 <br class="desktop-br"/>추구합니다.</p>
+    <p class="normal service-description__button">사이트 바로가기 ></p>
+  </div>
+
+  <div class="service__container1">
+      <img class="service__image1"
+      src="assets/images/purplelabs-healthcare/service/banner-plh-02-service-middle.png"
+      srcset="assets/images/purplelabs-healthcare/service/banner-plh-02-service-middle@2x.png 2x, assets/images/purplelabs-healthcare/service/banner-plh-02-service-middle@3x.png 3x">
+  </div>
+  <div class="service__container2">
+      <img class="service__image2"
+      src="assets/images/purplelabs-healthcare/service/img-plh-02-service-1.png"
+      srcset="assets/images/purplelabs-healthcare/service/img-plh-02-service-1@2x.png 2x, assets/images/purplelabs-healthcare/service/img-plh-02-service-1@3x.png 3x">
+  </div>
+  <div class="service__container3">
+    <img class="service__image3"
+    src="assets/images/purplelabs-healthcare/service/img-plh-02-service-2.png"
+    srcset="assets/images/purplelabs-healthcare/service/img-plh-02-service-2@2x.png 2x, assets/images/purplelabs-healthcare/service/img-plh-02-service-2@3x.png 3x">
+  </div>
+  <div class="service__container4">
+    <img class="service__image4"
+    src="assets/images/purplelabs-healthcare/service/img-plh-02-service-3.png"
+    srcset="assets/images/purplelabs-healthcare/service/img-plh-02-service-3@2x.png 2x, assets/images/purplelabs-healthcare/service/img-plh-02-service-3@3x.png 3x">
+  </div>
+  <div class="service__container5">
+    <img class="service__image5"
+    src="assets/images/purplelabs-healthcare/service/img-plh-02-service-4.png"
+    srcset="assets/images/purplelabs-healthcare/service/img-plh-02-service-4@2x.png 2x, assets/images/purplelabs-healthcare/service/img-plh-02-service-4@3x.png 3x">
+  </div>
+  <div class="service__container6">
+    <img class="service__image6"
+    src="assets/images/purplelabs-healthcare/service/img-plh-02-service-5.png"
+    srcset="assets/images/purplelabs-healthcare/service/img-plh-02-service-5@2x.png 2x, assets/images/purplelabs-healthcare/service/img-plh-02-service-5@3x.png 3x">
+  </div>
+</section>
+
+<section class="comment" style="display: none;">
+  <div class="comment-content">
+    <img class="comment-content__start" src="assets/images/ic-talkbox-start.svg">
+    <p class="light comment-content__line1">원하는 만큼, 본인의 노력만큼 초고속 승진 가능!</p>
+    <p class="light comment-content__line2">무한한 자기 성장, 교육기회 부여하는 핫한 회사!</p>
+    <img class="comment-content__end" src="assets/images/ic-talkbox-end.svg">
+
+    <p class="normal comment-content__mobile">
+      “성장하기 직전의 긍정적인 에너지가 있습니다. 좋은 사업 아이템, 좋은 멤버들과 함께 근무할 수 있어 좋습니다.”
+    </p>
+  </div>
+
+  <div class="comment-navigator">
+    <img class="comment-navigator__left-arrow" src="assets/images/ic-arrow-left.svg">
+    <p class="normal comment-navigator__index">1/4</p>
+    <img class="comment-navigator__right-arrow" src="assets/images/ic-arrow-right.svg">
+  </div>
+</section>
+
+<section class="member" style="display: none;">
+  {% for member in site.data.purplelabs-healthcare__members %}
+    {% include member/person.html photo= member.photo name = member.name team = member.team comment = member.comment %}
+  {% endfor %}
+</section>
+
+<section class="purplelabs-healthcare bottom-image-container">
+  <img class="purplelabs-healthcare bottom-image-container__image"
+  src="assets/images/purplelabs-healthcare/banner-plh-01-company-tech.png"
+  srcset="assets/images/purplelabs-healthcare/banner-plh-01-company-tech@2x.png 2x, assets/images/purplelabs-healthcare/banner-plh-01-company-tech@3x.png 3x">
+  
+  <div class="purplelabs-healthcare bottom-text-container">
+    <p class="light purplelabs-healthcare bottom-text-container__title">우리가 만들어가는 기술</p>
+    <p class="normal purplelabs-healthcare bottom-text-container__content">
+      유연함을 갖춘 디지털 풀스택 팀을 추구하지만, 가장 필요한 것은 디지털 역량과 데이터가 아니라<br/>
+      확보된 데이터를 해석하기 위한 논의, 팀워크 문화가 아닐까 생각합니다.
+    </p>
+    <p class="normal purplelabs-healthcare bottom-text-container__content">
+      디지털 풀스택을 구축하고 잘 활용하기 위해선 올스타보다 팀워크를 중시하는 문화 기술이 중요하다고 생각합니다.
+    </p>
+  </div>
+</section>

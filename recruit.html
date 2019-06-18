@@ -1,0 +1,45 @@
+---
+layout: default
+title: purplelabs
+stylesheet: assets/css/recruit.css
+---
+<section class="recruit top-image-container">
+  <img class="recruit top-image-container__image" src="assets/images/recruit/banner-recruit-mainvisual.svg">
+</section>
+
+<section class="purpleway">
+  <p class="light purpleway__title">우리가 일하는 방식</p>
+  {% for purpleway in site.data.recruit__purpleways %}
+    {% include company/card.html number = purpleway.number title = purpleway.title %}
+  {% endfor %}
+</section>
+
+<section class="purple-culture">
+  <p class="purple-culture__title">복지와 문화</p>
+  {% for purple-culture in site.data.recruit__purple-cultures %}
+    {% if purple-culture.divider %}
+      <div class="culture divider">
+    {% else %}
+      <div class="culture">
+    {% endif %}
+        <p class="normal culture__title">{{ purple-culture.title }}</p> 
+
+        {% for content in purple-culture.contents %}
+          <div class="culture__dot"></div>
+          <p class="normal culture__content">{{ content.text }}</p>
+        {% endfor %}
+      </div>
+  {% endfor %}
+</section>
+
+<section class="recruit bottom-image-container">
+  <img class="recruit bottom-image-container__image" src="assets/images/recruit/banner-recruit-bottom.svg">
+  
+  <div class="recruit bottom-text-container">
+    <p class="normal recruit bottom-text-container__title">
+      퍼플랩스/퍼플랩스헬스케어와 함께 <br class="desktop-br"/>
+      흥미로운 여정을 떠날 동료를 모십니다.
+    </p>
+    <p class="bold recruit bottom-text-container__button">채용분야 보기</p>
+  </div>
+</section>

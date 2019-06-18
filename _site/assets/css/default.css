@@ -1,0 +1,55 @@
+body { display: block; margin: 0; font-family: 'NanumSquare', sans-serif; }
+body p { margin: 0; }
+body .normal { font-weight: 400; }
+body .bold { font-weight: 700; }
+body .bolder { font-weight: 800; }
+body .light { font-weight: 300; }
+
+footer { border-top: 1px solid #ebebeb; }
+footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit { color: #666666; text-decoration: none; font-size: 13px; }
+footer .footer__copyright { margin-left: auto; display: grid; grid-gap: 4px; grid-template-columns: auto auto; }
+footer .footer__copyright--mobile { color: #999999; }
+footer .footer__copyright--default { color: #999999; font-size: 11px; }
+
+header { z-index: 10; position: fixed; width: 100%; top: 0; }
+header .header__logo-white, header .header__logo-purple, header .header__logo-white--mobile, header .header__logo-purple--mobile { grid-area: logo; }
+header .header__hamburger-white, header .header__hamburger-black { grid-area: hamburger; cursor: pointer; }
+header .header__purplelabs, header .header__purplelabs-healthcare, header .header__recruit { text-decoration: none; font-size: 18px; }
+header .header__purplelabs { grid-area: purplelabs; }
+header .header__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
+header .header__recruit { grid-area: recruit; }
+
+.header { background-color: transparent; }
+.header .header__purplelabs, .header .header__purplelabs-healthcare, .header .header__recruit { color: white; }
+
+.header--scrolled { background-color: white; }
+.header--scrolled .header__purplelabs, .header--scrolled .header__purplelabs-healthcare, .header--scrolled .header__recruit { color: #333333; }
+
+@media (min-width: 1200px) { header { height: 88px; display: grid; justify-content: center; align-items: center; grid-column-gap: 48px; grid-template-columns: minmax(0, 400px) minmax(573px, 1fr) 66px 132px 33px minmax(0, 400px); grid-template-areas: ". logo purplelabs purplelabs-healthcare recruit ."; }
+  header .header__logo-white--mobile, header .header__logo-purple--mobile, header .header__hamburger-white, header .header__hamburger-black { display: none; }
+  .header .header__logo-purple { display: none; }
+  .header--scrolled .header__logo-white { display: none; }
+  footer { height: 88px; display: grid; align-items: center; grid-column-gap: 30px; grid-template-columns: minmax(0, 418px) 48px 95px 24px minmax(767px, 1fr) minmax(0, 418px); grid-template-areas: ". purplelabs purplelabs-healthcare recruit copyright ."; }
+  footer .footer__copyright--mobile { font-size: 11px; }
+  footer .footer__purplelabs { grid-area: purplelabs; }
+  footer .footer__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
+  footer .footer__recruit { grid-area: recruit; }
+  footer .footer__copyright { grid-area: copyright; } }
+@media (max-width: 1199px) { header { height: 64px; display: grid; justify-content: stretch; align-items: center; grid-template-columns: 30px 58px 1fr auto 30px; grid-template-areas: ". logo . hamburger ."; }
+  header .header__logo-white--m, header .header__logo-purple--m { height: 32px; }
+  header .header__logo-white, header .header__logo-purple, header .header__purplelabs, header .header__purplelabs-healthcare, header .header__recruit { display: none; }
+  .header .header__logo-purple--mobile, .header .header__hamburger-black { display: none; }
+  .header--scrolled .header__logo-white--mobile, .header--scrolled .header__hamburger-white { display: none; }
+  footer { height: 64px; display: grid; justify-content: center; align-items: center; }
+  footer .footer__purplelabs, footer .footer__purplelabs-healthcare, footer .footer__recruit, footer .footer__copyright--default { display: none; }
+  footer .footer__copyright--mobile { font-size: 12px; }
+  .desktop-br { display: none; } }
+.menu { z-index: 20; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000000F2; display: grid; grid-template-columns: 30px auto 1fr 30px; grid-template-rows: 16px auto 1fr repeat(3, 112px) 1fr 48px; grid-template-areas: ". . . ." ". logo close ." ". . . ."  ". purplelabs purplelabs ." ". purplelabs-healthcare purplelabs-healthcare ." ". recruit recruit ."; }
+.menu .menu__logo { width: 58px; }
+.menu .menu__close { margin-left: auto; grid-area: close; cursor: pointer; }
+.menu .menu__purplelabs, .menu .menu__purplelabs-healthcare, .menu .menu__recruit { padding: 43px 0 43px 0; width: 260px; font-size: 24px; text-align: center; color: #ffffff; justify-self: center; align-self: center; text-decoration: none; }
+.menu .menu__purplelabs, .menu .menu__purplelabs-healthcare { border-bottom: 1px solid #ffffff1a; }
+.menu .menu__logo-container { grid-area: logo; }
+.menu .menu__purplelabs { grid-area: purplelabs; }
+.menu .menu__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
+.menu .menu__recruit { grid-area: recruit; }

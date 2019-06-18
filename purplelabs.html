@@ -1,0 +1,118 @@
+---
+layout: default
+title: purplelabs
+stylesheet: assets/css/purplelabs.css
+script: assets/js/purplelabs.js
+---
+<section class="purplelabs top-image-container">
+  <img class="purplelabs top-image-container__image" src="assets/images/purplelabs/banner-pl-mainvisual.svg">
+</section>
+
+<section class="tab">
+  <p class="bold tab__company">회사소개</p>
+  <p class="bold tab__service">서비스</p>
+  <p class="bold tab__member">멤버</p>
+</section>
+
+<section class="company">
+  {% include company/slogan.html 
+    line-start = "소비자, 공급자" lines = "모두가 Win-Win하는<br/>오프라인 혁신을" line-end = "목표로 합니다." mobile = "“소비자, 공급자 모두가 Win-Win하는 오프라인 혁신을 목표로 합니다.”" %}
+  
+  <p class="normal paragraph1">
+    무인스토어, 무인스토어솔루션을 개발하는 퓨처리테일 솔루션 팀 퍼플랩스는 연쇄 창업가 전종하 대표가 창업한 팀입니다.
+  </p>
+  <p class="normal paragraph2">
+    오프라인의 80%는 망하고 있고 공급자는 물론 고객만족까지 거의 존재하지 않습니다. 2017년 우리는 비즈니스를 통한 사회 문제 해결의 미션을 찾고 있었고, 6개월간 세상과 사회 그리고 우리 주변의 사람들을 바라보며 우리가 매일 접하며 이용하는 오프라인은 수백년간 공급자 중심의 휠을 유지하고 있는 치명적인 문제가 있는 것을 발견했습니다.
+  </p>
+  <p class="normal paragraph3">
+    아직까지의 오프라인은 온라인처럼 소비자 중심의 고도화를 이뤄내기 위한 혁신에 도전하고 있지 않고, 단순한 유통을 통해 소비자에게 그저 그런 상품을 보기 편하게 진열하는 정도에 머물러 있습니다.
+  </p>
+  <p class="normal paragraph4">
+    우리는 소비자에게 최고의 제품, 서비스, 합리성을 구현하기 위한 혁신을 거듭한 기업만이 사람들에게 인정받을 것이라고 확신합니다.
+  </p>
+</section>
+
+<section class="goal">
+  <p class="light goal__title">우리가 추구하는 것</p>
+  {% for goal in site.data.purplelabs__goals %}
+    {% include company/card.html number = goal.number title = goal.title %}
+  {% endfor %}
+</section>
+
+<section class="service" style="display: none;">
+  <div class="service-description">
+    <img class="service-description__logo" src="assets/images/purplelabs/ic-logo-dailyhub.svg">
+    <p class="normal service-description__title">매일 만나는 <br class="desktop-br"/>프레시 레스토랑</p>
+    <p class="normal service-description__button">7월 서비스 출시예정</p>
+  </div>
+
+  <div class="service__container1">
+    <img class="service__image1" 
+    src="assets/images/purplelabs/service/banner-pl-02-service-middle.png"
+    srcset="assets/images/purplelabs/service/banner-pl-02-service-middle@2x.png 2x, assets/images/purplelabs/service/banner-pl-02-service-middle@3x.png 3x">
+  </div>
+  <div class="service__container2">
+    <img class="service__image2" 
+    src="assets/images/purplelabs/service/img-pl-02-service-1.png"
+    srcset="assets/images/purplelabs/service/img-pl-02-service-1@2x.png 2x, assets/images/purplelabs/service/img-pl-02-service-1@3x.png 3x">
+  </div>
+  <div class="service__container3">
+    <img class="service__image3" 
+    src="assets/images/purplelabs/service/img-pl-02-service-2.png"
+    srcset="assets/images/purplelabs/service/img-pl-02-service-2@2x.png 2x, assets/images/purplelabs/service/img-pl-02-service-2@3x.png 3x">
+  </div>
+  <div class="service__container4">
+    <img class="service__image4" 
+    src="assets/images/purplelabs/service/img-pl-02-service-3.png" 
+    srcset="assets/images/purplelabs/service/img-pl-02-service-3@2x.png 2x, assets/images/purplelabs/service/img-pl-02-service-3@3x.png 3x">
+  </div> 
+  <div class="service__container5">
+    <img class="service__image5" 
+    src="assets/images/purplelabs/service/img-pl-02-service-4.png" 
+    srcset="assets/images/purplelabs/service/img-pl-02-service-4@2x.png 2x, assets/images/purplelabs/service/img-pl-02-service-4@3x.png 3x">
+  </div>
+  <div class="service__container6">
+    <img class="service__image6"
+    src="assets/images/purplelabs/service/img-pl-02-service-5.png"
+    srcset="assets/images/purplelabs/service/img-pl-02-service-5@2x.png 2x, assets/images/purplelabs/service/img-pl-02-service-5@3x.png 3x">
+  </div>
+</section>
+
+<section class="comment" style="display: none;">
+  <div class="comment-content">
+    <img class="comment-content__start" src="assets/images/ic-talkbox-start.svg">
+    <p class="light comment-content__line1">자율적으로 일하는 문화입니다.</p>
+    <p class="light comment-content__line2">하루가 다르게 성장하는 복지를 누릴 수 있어요.</p>
+    <img class="comment-content__end" src="assets/images/ic-talkbox-end.svg">
+
+    <p class="normal comment-content__mobile">
+      “성장하기 직전의 긍정적인 에너지가 있습니다. 좋은 사업 아이템, 좋은 멤버들과 함께 근무할 수 있어 좋습니다.”
+    </p>
+  </div>
+
+  <div class="comment-navigator">
+    <img class="comment-navigator__left-arrow" src="assets/images/ic-arrow-left.svg">
+    <p class="normal comment-navigator__index">1/4</p>
+    <img class="comment-navigator__right-arrow" src="assets/images/ic-arrow-right.svg">
+  </div>
+</section>
+
+<section class="member" style="display: none;">
+  {% for member in site.data.purplelabs__members %}
+    {% include member/person.html photo= member.photo name = member.name team = member.team comment = member.comment %}
+  {% endfor %}
+</section>
+
+<section class="purplelabs bottom-image-container">
+  <img class="purplelabs bottom-image-container__image"
+  src="assets/images/purplelabs/banner-pl-01-company-tech.png"
+  srcset="assets/images/purplelabs/banner-pl-01-company-tech@2x.png 2x, assets/images/purplelabs/banner-pl-01-company-tech@3x.png 3x">
+  
+  <div class="purplelabs bottom-text-container">
+    <p class="light purplelabs bottom-text-container__title">우리가 만들어가는 기술</p>
+    <p class="normal purplelabs bottom-text-container__content">
+      오프라인에서 무조건 이기는 게임을 하기 위해 <br class="desktop-br"/>
+      언택트 리테일, 옴니채널, 스마트물류에 많은 관심을 갖고 있습니다.
+    </p>
+  </div>
+</section>
