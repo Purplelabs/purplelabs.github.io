@@ -547,7 +547,7 @@
   grid-auto-flow: row;
   justify-items: center;
   grid-gap: 10px;
-  grid-template-rows: auto 30px auto auto;
+  grid-template-rows: auto 30px auto 1fr;
 
   .person__name,
   .person__team,
