@@ -280,7 +280,7 @@
     grid-auto-columns: 260px;
     grid-auto-rows: minmax(154px, auto);
     grid-template-rows: 50px;
-    grid-template-columns: repeat(auto-fill, 260px);
+    grid-template-columns: repeat(auto-fill, minmax(260px, 345px));
 
     .goal__title {
       font-size: 28px;

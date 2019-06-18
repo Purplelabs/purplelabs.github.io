@@ -50,7 +50,7 @@
   .company { padding: 50px 0 50px 0; display: grid; grid-row-gap: 20px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 10px; grid-template-areas: ". slogan ." ". . ." ". paragraph1 ." ". paragraph2 ." ". paragraph3 ." ". paragraph4 ."; }
   .slogan { display: grid; }
   .slogan .slogan__open, .slogan .slogan__close, .slogan .slogan__line-start, .slogan .slogan__lines, .slogan .slogan__line-end { display: none; }
-  .goal { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 10px; grid-auto-columns: 260px; grid-auto-rows: minmax(154px, auto); grid-template-rows: 50px; grid-template-columns: repeat(auto-fill, 260px); }
+  .goal { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 10px; grid-auto-columns: 260px; grid-auto-rows: minmax(154px, auto); grid-template-rows: 50px; grid-template-columns: repeat(auto-fill, minmax(260px, 345px)); }
   .goal .goal__title { font-size: 28px; }
   .card { display: grid; grid-gap: 12px; grid-auto-flow: row; grid-template-rows: auto 1fr; }
   .card .card__number { font-size: 16px; }
