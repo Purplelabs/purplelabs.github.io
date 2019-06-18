@@ -63,7 +63,7 @@
     display: grid;
     grid-column-gap: 48px;
     grid-row-gap: 20px;
-    grid-template-columns: 1fr repeat(2, 512px) 1fr;
+    grid-template-columns: 1fr 464px 512px 1fr;
     grid-template-areas: ". slogan paragraph1 ."
                          ". slogan paragraph2 ."
                          ". slogan paragraph3 ."
@@ -408,7 +408,7 @@
   .tab__company,
   .tab__service,
   .tab__member {
-    flex-basis: 340px;
+    flex-basis: 341px;
     text-align: center;
     opacity: 0.2;
     color: #333333;
