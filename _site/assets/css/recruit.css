@@ -6,9 +6,8 @@
 .recruit.top-image-container .recruit.top-image-container__image { min-width: 960px; }
 
 .recruit.bottom-image-container { max-height: 400px; }
-.recruit.bottom-image-container .recruit.bottom-image-container__image { min-width: 960px; }
+.recruit.bottom-image-container .recruit.bottom-image-container__image { min-width: 1306px; }
 
-.recruit.bottom-text-container { background-color: #00000066; }
 .recruit.bottom-text-container .recruit.bottom-text-container__title, .recruit.bottom-text-container .recruit.bottom-text-container__button { color: white; text-align: center; }
 .recruit.bottom-text-container .recruit.bottom-text-container__button { border-radius: 4px; background-color: white; color: #663399; }
 
