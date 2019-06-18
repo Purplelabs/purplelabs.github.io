@@ -94,7 +94,7 @@
 .card .card__number { color: #663399; }
 .card .card__title { color: #666666; }
 
-.service .service__image1 { min-width: 640px; position: relative; left: 50%; transform: translateX(-50%); }
+.service .service__image1 { min-width: 640px; max-width: 1024px; position: relative; left: 50%; transform: translateX(-50%); }
 .service .service__container1, .service .service__container2, .service .service__container3, .service .service__container4, .service .service__container5, .service .service__container6 { overflow: hidden; }
 .service .service__image1, .service .service__image2, .service .service__image3, .service .service__image4, .service .service__image5, .service .service__image6 { width: 100%; }
 

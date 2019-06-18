@@ -476,6 +476,7 @@
 .service {
   .service__image1 {
     min-width: 640px;
+    max-width: 1024px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
