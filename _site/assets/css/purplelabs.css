@@ -36,9 +36,6 @@
 .card .card__number { font-size: 18px; }
 .card .card__title { font-size: 24px; line-height: 1.5; }
 
-.tab { height: 72px; display: flex; justify-content: center; align-items: stretch; }
-.tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; padding: 25px 0 25px 0; font-size: 20px; text-align: center; opacity: 0.2; color: #333333; }
-
 .service .service__image1 { grid-area: image1; }
 .service .service__image2 { grid-area: image2; }
 .service .service__image3 { grid-area: image3; }
@@ -89,3 +86,10 @@
 .purplelabs.bottom-text-container { margin: 140px 30px 140px 30px; display: grid; grid-gap: 20px; justify-content: center; align-content: center; }
 .purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { font-size: 36px; line-height: 1.5; }
 .purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { font-size: 16px; line-height: 1.88; }
+
+@media (min-width: 1200px) { .tab { height: 72px; }
+  .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 25px 0 25px 0; font-size: 20px; } }
+@media (max-width: 1199px) { .tab { height: 60px; }
+  .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 21px 0 21px 0; font-size: 16px; } }
+.tab { display: flex; justify-content: center; align-items: stretch; }
+.tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; text-align: center; opacity: 0.2; color: #333333; }
