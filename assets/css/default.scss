@@ -65,6 +65,7 @@ header {
   .header__hamburger-white,
   .header__hamburger-black {
     grid-area: hamburger;
+    cursor: pointer;
   }
 
   .header__purplelabs,
@@ -228,7 +229,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: #000000F2;
-  
+
   display: grid;
   grid-template-columns: 30px auto 1fr 30px;
   grid-template-rows: 16px auto 1fr repeat(3, 112px) 1fr 48px;
@@ -246,6 +247,7 @@ header {
   .menu__close {
     margin-left: auto;
     grid-area: close;
+    cursor: pointer;
   }
 
   .menu__purplelabs,
@@ -258,6 +260,7 @@ header {
     color: #ffffff;
     justify-self: center;
     align-self: center;
+    text-decoration: none;
   }
 
   .menu__purplelabs,
