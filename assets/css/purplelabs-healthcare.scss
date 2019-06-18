@@ -46,25 +46,6 @@
   }
 }
 
-.purplelabs-healthcare.bottom-text-container {
-  margin: 100px 30px 110px 30px;
-  display: grid;
-  grid-gap: 20px;
-  justify-content: center;
-  align-content: center;
-  grid-template-rows: 60px;
-  
-  .purplelabs-healthcare.bottom-text-container__title {
-    font-size: 36px;
-    line-height: 1.5;
-  }
-
-  .purplelabs-healthcare.bottom-text-container__content {
-    font-size: 16px;
-    line-height: 1.88;
-  }
-}
-
 @media (min-width: 1200px) {
   .tab {
     height: 72px;
@@ -226,20 +207,20 @@
     grid-gap: 40px;
     grid-template-columns: repeat(4, 216px);
   }
-
-  .purplelabs.bottom-text-container {
-    margin: 140px 30px 140px 30px;
+  .purplelabs-healthcare.bottom-text-container {
+    margin: 100px 30px 110px 30px;
     display: grid;
     grid-gap: 20px;
     justify-content: center;
     align-content: center;
+    grid-template-rows: 60px;
     
-    .purplelabs.bottom-text-container__title {
+    .purplelabs-healthcare.bottom-text-container__title {
       font-size: 36px;
       line-height: 1.5;
     }
   
-    .purplelabs.bottom-text-container__content {
+    .purplelabs-healthcare.bottom-text-container__content {
       font-size: 16px;
       line-height: 1.88;
     }
@@ -393,20 +374,19 @@
     grid-template-columns: repeat(auto-fill, minmax(261px, 345px));
   }
 
-  .purplelabs.bottom-text-container {
-    margin: 50px 20px 50px 20px;
+  .purplelabs-healthcare.bottom-text-container {
+    margin: 50px 25px 0 25px;
     display: grid;
     grid-gap: 20px;
     justify-content: center;
     align-content: start;
     grid-auto-columns: minmax(auto, 475px);
-    grid-template-rows: auto 1fr;
     
-    .purplelabs.bottom-text-container__title {
+    .purplelabs-healthcare.bottom-text-container__title {
       font-size: 28px;
     }
   
-    .purplelabs.bottom-text-container__content {
+    .purplelabs-healthcare.bottom-text-container__content {
       font-size: 16px;
       line-height: 1.88;
     }

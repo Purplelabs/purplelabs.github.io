@@ -10,10 +10,6 @@
 
 .purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__title, .purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__content { color: white; text-align: center; }
 
-.purplelabs-healthcare.bottom-text-container { margin: 100px 30px 110px 30px; display: grid; grid-gap: 20px; justify-content: center; align-content: center; grid-template-rows: 60px; }
-.purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__title { font-size: 36px; line-height: 1.5; }
-.purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__content { font-size: 16px; line-height: 1.88; }
-
 @media (min-width: 1200px) { .tab { height: 72px; }
   .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 25px 0 25px 0; font-size: 20px; }
   .company { padding: 100px 0 100px 0; display: grid; grid-column-gap: 48px; grid-row-gap: 20px; grid-template-columns: 1fr 464px 512px 1fr; grid-template-areas: ". slogan paragraph1 ." ". slogan paragraph2 ." ". slogan paragraph3 ." ". slogan paragraph4 ."; }
@@ -45,9 +41,9 @@
   .comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
   .comment-navigator .comment__index { font-size: 16px; }
   .member { padding: 24px 0 24px 0; display: grid; justify-content: center; grid-gap: 40px; grid-template-columns: repeat(4, 216px); }
-  .purplelabs.bottom-text-container { margin: 140px 30px 140px 30px; display: grid; grid-gap: 20px; justify-content: center; align-content: center; }
-  .purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { font-size: 36px; line-height: 1.5; }
-  .purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { font-size: 16px; line-height: 1.88; } }
+  .purplelabs-healthcare.bottom-text-container { margin: 100px 30px 110px 30px; display: grid; grid-gap: 20px; justify-content: center; align-content: center; grid-template-rows: 60px; }
+  .purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__title { font-size: 36px; line-height: 1.5; }
+  .purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__content { font-size: 16px; line-height: 1.88; } }
 @media (max-width: 1199px) { .tab { height: 60px; }
   .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 21px 0 21px 0; font-size: 16px; }
   .company { padding: 50px 0 50px 0; display: grid; grid-row-gap: 20px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 10px; grid-template-areas: ". slogan ." ". . ." ". paragraph1 ." ". paragraph2 ." ". paragraph3 ." ". paragraph4 ."; }
@@ -70,9 +66,9 @@
   .comment-navigator .comment-navigator__left-arrow, .comment-navigator .comment-navigator__right-arrow { display: none; }
   .comment-navigator .comment-navigator__index { font-size: 14px; }
   .member { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 50px; grid-template-columns: repeat(auto-fill, minmax(261px, 345px)); }
-  .purplelabs.bottom-text-container { margin: 50px 20px 50px 20px; display: grid; grid-gap: 20px; justify-content: center; align-content: start; grid-auto-columns: minmax(auto, 475px); grid-template-rows: auto 1fr; }
-  .purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { font-size: 28px; }
-  .purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { font-size: 16px; line-height: 1.88; } }
+  .purplelabs-healthcare.bottom-text-container { margin: 50px 25px 0 25px; display: grid; grid-gap: 20px; justify-content: center; align-content: start; grid-auto-columns: minmax(auto, 475px); }
+  .purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__title { font-size: 28px; }
+  .purplelabs-healthcare.bottom-text-container .purplelabs-healthcare.bottom-text-container__content { font-size: 16px; line-height: 1.88; } }
 .tab { display: flex; justify-content: center; align-items: stretch; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); background-color: #ffffff; }
 .tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 341px; text-align: center; opacity: 0.2; color: #333333; }
 
