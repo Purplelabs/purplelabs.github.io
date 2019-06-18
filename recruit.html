@@ -9,66 +9,27 @@ stylesheet: assets/css/recruit.css
 
 <section class="purpleway">
   <p class="light purpleway__title">우리가 일하는 방식</p>
-  {% include company/card.html
-    number = "01" title = "고객, 팀원, 주주,<br/>사회에 공헌" %}
-  {% include company/card.html
-    number = "02" title = "강력한 에티켓<br/>팀워크 문화" %}
-  {% include company/card.html
-    number = "03" title = "신속, 최고를<br/>추구" %}
-  {% include company/card.html
-    number = "04" title = "Consumer Tech<br/>R&D company" %}
-  {% include company/card.html
-    number = "05" title = "분야 최고의<br/>프로페셔널" %}
-  {% include company/card.html
-    number = "06" title = "공헌에 따른<br/>합당한 보상" %}
-  {% include company/card.html
-    number = "07" title = "독보적인<br/>품질" %}
-  {% include company/card.html
-    number = "08" title = "인재 중심<br/>문화" %}
-  {% include company/card.html
-    number = "09" title = "소통, 논쟁을<br/>통한 발전" %}
-  {% include company/card.html
-    number = "10" title = "끊이지 않는<br/>고객과의 소통" %}
+  {% for purpleway in site.data.recruit__purpleways %}
+    {% include company/card.html number = purpleway.number title = purpleway.title %}
+  {% endfor %}
 </section>
 
 <section class="purple-culture">
   <p class="purple-culture__title">복지와 문화</p>
+  {% for purple-culture in site.data.recruit__purple-cultures %}
+    {% if purple-culture.divider %}
+      <div class="culture divider">
+    {% else %}
+      <div class="culture">
+    {% endif %}
+        <p class="normal culture__title">{{ purple-culture.title }}</p> 
 
-  <div class="culture divider">
-    <p class="normal culture__title">효율적인 근무 환경을 <br class="desktop-br"/>추구합니다.</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">유연 근무제 실시</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">조기 출근 포인트 적립 시 월급 외 추가 지급</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">까페에서 원격 근무 가능</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">자율적 휴가 사용</p>
-  </div>
-
-  <div class="culture divider">
-    <p class="normal culture__title">효율적인 근무 환경을 <br class="desktop-br"/>추구합니다.</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">유연 근무제 실시</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">조기 출근 포인트 적립 시 월급 외 추가 지급</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">까페에서 원격 근무 가능</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">자율적 휴가 사용</p>
-  </div>
-
-  <div class="culture">
-    <p class="normal culture__title">효율적인 근무 환경을 <br class="desktop-br"/>추구합니다.</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">유연 근무제 실시</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">조기 출근 포인트 적립 시 월급 외 추가 지급</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">까페에서 원격 근무 가능</p>
-    <div class="culture__dot"></div>
-    <p class="normal culture__content">자율적 휴가 사용</p>
-  </div>
+        {% for content in purple-culture.contents %}
+          <div class="culture__dot"></div>
+          <p class="normal culture__content">{{ content.text }}</p>
+        {% endfor %}
+      </div>
+  {% endfor %}
 </section>
 
 <section class="recruit bottom-image-container">

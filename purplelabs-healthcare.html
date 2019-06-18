@@ -37,18 +37,9 @@ script: assets/js/purplelabs-healthcare.js
 
 <section class="goal">
   <p class="light goal__title">우리가 추구하는 것</p>
-  {% include company/card.html
-    number = "01" title = "디지털 풀스택" %}
-  {% include company/card.html
-    number = "02" title = "여성들의 삶" %}
-  {% include company/card.html
-    number = "03" title = "헬스케어" %}
-  {% include company/card.html
-    number = "04" title = "데이터 기반 상호작용" %}
-  {% include company/card.html
-    number = "05" title = "매출과 이익" %}
-  {% include company/card.html
-    number = "06" title = "고객과의 신뢰" %}
+  {% for goal in site.data.purplelabs-healthcare__goals %}
+    {% include company/card.html number = goal.number title = goal.title %}
+  {% endfor %}
 </section>
 
 <section class="service" style="display: none;">
@@ -110,9 +101,9 @@ script: assets/js/purplelabs-healthcare.js
 </section>
 
 <section class="member" style="display: none;">
-  {% include purplelabs/person.html
-    photo="assets/images/purplelabs-healthcare/member/img-pl-03-member-ceo.svg" name="전종하" team="CEO"
-    comment="퍼플랩스 전종하 대표는 온라인 푸드마켓 더반찬을 2016년 동원그룹에 300억의 매각을 완료하였습니다. 29세에 동원그룹 온라인 biz담당 임원으로서 최연소 대기업 임원 경험을 가지고 있습니다. 30세의 아직은 젊지만 깊고 다양한 경험을 바탕으로 퍼플랩스의 경영 전반을 총괄하고 있습니다." %}
+  {% for member in site.data.purplelabs-healthcare__members %}
+    {% include member/person.html photo= member.photo name = member.name team = member.team comment = member.comment %}
+  {% endfor %}
 </section>
 
 <section class="purplelabs-healthcare bottom-image-container">

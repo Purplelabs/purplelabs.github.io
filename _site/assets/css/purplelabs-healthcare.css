@@ -109,7 +109,7 @@
 
 .comment-navigator .comment-navigator__index { color: #999999; }
 
-.person { display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 10px; grid-template-rows: auto 30px auto auto; }
+.person { display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 10px; grid-template-rows: auto 30px auto 1fr; }
 .person .person__name, .person .person__team, .person .person__comment { text-align: center; }
 .person .person__name { color: #333333; margin-top: 10px; font-size: 18px; }
 .person .person__team { color: #663399; font-size: 14px; }
