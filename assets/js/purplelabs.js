@@ -1,6 +1,6 @@
-const tabCompany = document.querySelector('.tab__company')
-const tabService = document.querySelector('.tab__service')
-const tabMember = document.querySelector('.tab__member')
+const tabCompany = document.querySelector('.tab__company');
+const tabService = document.querySelector('.tab__service');
+const tabMember = document.querySelector('.tab__member');
 
 const sectionCompany = document.querySelector('.company');
 const sectionGoal = document.querySelector('.goal');

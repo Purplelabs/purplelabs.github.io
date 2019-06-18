@@ -25,3 +25,20 @@ function updateHeader() {
 }
 
 window.addEventListener('scroll', debounce(updateHeader));
+
+const menu = document.querySelector('.menu');
+const hamburgerWhite = document.querySelector('.header__hamburger-white');
+const hamburgerBlack = document.querySelector('.header__hamburger-black');
+const close = document.querySelector('.menu__close');
+
+const openMenu = () => {
+  menu.style = null;
+};
+
+const closeMenu = () => {
+  menu.style.display = 'none';
+};
+
+hamburgerWhite.addEventListener('click', openMenu);
+hamburgerBlack.addEventListener('click', openMenu);
+close.addEventListener('click', closeMenu);
