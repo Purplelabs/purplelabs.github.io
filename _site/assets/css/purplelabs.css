@@ -12,7 +12,7 @@
 
 @media (min-width: 1200px) { .tab { height: 72px; }
   .tab .tab__company, .tab .tab__service, .tab .tab__member { padding: 25px 0 25px 0; font-size: 20px; }
-  .company { padding: 100px 0 100px 0; display: grid; grid-column-gap: 48px; grid-row-gap: 20px; grid-template-columns: 1fr repeat(2, 512px) 1fr; grid-template-areas: ". slogan paragraph1 ." ". slogan paragraph2 ." ". slogan paragraph3 ." ". slogan paragraph4 ."; }
+  .company { padding: 100px 0 100px 0; display: grid; grid-column-gap: 48px; grid-row-gap: 20px; grid-template-columns: 1fr 464px 512px 1fr; grid-template-areas: ". slogan paragraph1 ." ". slogan paragraph2 ." ". slogan paragraph3 ." ". slogan paragraph4 ."; }
   .slogan { display: grid; grid-column-gap: 15px; grid-template-columns: repeat(2, auto) 1fr; grid-template-rows: repeat(2, auto) 1fr; grid-template-areas: "open line-start line-start" ". lines lines" ". line-end close"; }
   .slogan .slogan__mobile { display: none; }
   .goal { padding: 100px 0 100px 0; display: grid; justify-content: center; grid-gap: 10px; grid-auto-rows: 180px; grid-template-columns: repeat(3, 335px); grid-template-rows: 70px; }
@@ -50,12 +50,12 @@
   .company { padding: 50px 0 50px 0; display: grid; grid-row-gap: 20px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 10px; grid-template-areas: ". slogan ." ". . ." ". paragraph1 ." ". paragraph2 ." ". paragraph3 ." ". paragraph4 ."; }
   .slogan { display: grid; }
   .slogan .slogan__open, .slogan .slogan__close, .slogan .slogan__line-start, .slogan .slogan__lines, .slogan .slogan__line-end { display: none; }
-  .goal { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 10px; grid-auto-columns: 260px; grid-auto-rows: minmax(154px, auto); grid-template-rows: 50px; grid-template-columns: repeat(auto-fill, 260px); }
+  .goal { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 10px; grid-auto-columns: 260px; grid-auto-rows: minmax(154px, auto); grid-template-rows: 50px; grid-template-columns: repeat(auto-fill, minmax(260px, 345px)); }
   .goal .goal__title { font-size: 28px; }
   .card { display: grid; grid-gap: 12px; grid-auto-flow: row; grid-template-rows: auto 1fr; }
   .card .card__number { font-size: 16px; }
   .card .card__title { font-size: 20px; line-height: 1.6; }
-  .service { padding: 80px 0 10px 0; display: grid; justify-content: center; grid-gap: 10px; grid-template-columns: repeat(auto-fill, 320px); grid-auto-rows: 240px; grid-template-rows: auto minmax(400px, auto); }
+  .service { padding: 80px 0 10px 0; display: grid; justify-content: center; grid-gap: 10px; grid-template-columns: repeat(auto-fill, minmax(320px, 379px)); grid-auto-rows: 240px; grid-template-rows: auto minmax(400px, auto); }
   .service .service-description, .service .service__container1 { grid-column: 1 / -1; }
   .service-description { padding-bottom: 10px; display: grid; grid-auto-flow: row; justify-items: center; grid-gap: 15px; }
   .service-description .service-description__title { text-align: center; font-size: 18px; }
@@ -65,12 +65,12 @@
   .comment-navigator { display: grid; grid-auto-flow: column; justify-content: space-between; align-items: center; }
   .comment-navigator .comment-navigator__left-arrow, .comment-navigator .comment-navigator__right-arrow { display: none; }
   .comment-navigator .comment-navigator__index { font-size: 14px; }
-  .member { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 50px; grid-template-columns: repeat(auto-fill, 261px); }
+  .member { padding: 50px 30px 50px 30px; display: grid; justify-content: center; grid-gap: 50px; grid-template-columns: repeat(auto-fill, minmax(261px, 345px)); }
   .purplelabs.bottom-text-container { margin: 50px 20px 50px 20px; display: grid; grid-gap: 20px; justify-content: center; align-content: start; grid-auto-columns: minmax(auto, 475px); grid-template-rows: auto 1fr; }
   .purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { font-size: 28px; }
   .purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { font-size: 16px; line-height: 1.88; } }
-.tab { display: flex; justify-content: center; align-items: stretch; }
-.tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; text-align: center; opacity: 0.2; color: #333333; }
+.tab { display: flex; justify-content: center; align-items: stretch; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); background-color: #ffffff; }
+.tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 341px; text-align: center; opacity: 0.2; color: #333333; }
 
 .company .paragraph1, .company .paragraph2, .company .paragraph3, .company .paragraph4 { color: #666666; font-size: 16px; line-height: 1.88; }
 .company .slogan { grid-area: slogan; }

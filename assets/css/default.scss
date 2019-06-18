@@ -22,6 +22,8 @@ body {
 }
 
 footer {
+  border-top: 1px solid #ebebeb;
+
   .footer__purplelabs,
   .footer__purplelabs-healthcare,
   .footer__recruit {
@@ -48,6 +50,7 @@ footer {
 }
 
 header {
+  z-index: 10;
   position: fixed;
   width: 100%;
   top: 0;
@@ -59,7 +62,8 @@ header {
     grid-area: logo;
   }
   
-  .header__hamburger {
+  .header__hamburger-white,
+  .header__hamburger-black {
     grid-area: hamburger;
   }
 
@@ -116,7 +120,8 @@ header {
   
     .header__logo-white--mobile,
     .header__logo-purple--mobile, 
-    .header__hamburger{
+    .header__hamburger-white, 
+    .header__hamburger-black {
       display: none;
     }
   }
@@ -178,13 +183,15 @@ header {
   }
 
   .header {
-    .header__logo-purple--mobile {
+    .header__logo-purple--mobile,
+    .header__hamburger-black {
       display: none;
     }
   }
 
   .header--scrolled {
-    .header__logo-white--mobile {
+    .header__logo-white--mobile,
+    .header__hamburger-white {
       display: none;
     }
   }
