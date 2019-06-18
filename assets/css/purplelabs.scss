@@ -402,6 +402,8 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 
   .tab__company,
   .tab__service,

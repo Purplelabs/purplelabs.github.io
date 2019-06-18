@@ -69,7 +69,7 @@
   .purplelabs.bottom-text-container { margin: 50px 20px 50px 20px; display: grid; grid-gap: 20px; justify-content: center; align-content: start; grid-auto-columns: minmax(auto, 475px); grid-template-rows: auto 1fr; }
   .purplelabs.bottom-text-container .purplelabs.bottom-text-container__title { font-size: 28px; }
   .purplelabs.bottom-text-container .purplelabs.bottom-text-container__content { font-size: 16px; line-height: 1.88; } }
-.tab { display: flex; justify-content: center; align-items: stretch; }
+.tab { display: flex; justify-content: center; align-items: stretch; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); background-color: #ffffff; }
 .tab .tab__company, .tab .tab__service, .tab .tab__member { flex-basis: 340px; text-align: center; opacity: 0.2; color: #333333; }
 
 .company .paragraph1, .company .paragraph2, .company .paragraph3, .company .paragraph4 { color: #666666; font-size: 16px; line-height: 1.88; }
