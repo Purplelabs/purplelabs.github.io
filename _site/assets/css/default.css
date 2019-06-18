@@ -10,7 +10,7 @@ footer .footer__copyright { margin-left: auto; display: grid; grid-gap: 4px; gri
 footer .footer__copyright--mobile { color: #999999; }
 footer .footer__copyright--default { color: #999999; font-size: 11px; }
 
-header { position: fixed; width: 100%; top: 0; }
+header { z-index: 10; position: fixed; width: 100%; top: 0; }
 header .header__logo-white, header .header__logo-purple, header .header__logo-white--mobile, header .header__logo-purple--mobile { grid-area: logo; }
 header .header__hamburger-white, header .header__hamburger-black { grid-area: hamburger; }
 header .header__purplelabs, header .header__purplelabs-healthcare, header .header__recruit { text-decoration: none; font-size: 18px; }
