@@ -219,3 +219,54 @@ header {
     display: none;
   }
 }
+
+.menu {
+  z-index: 20;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000F2;
+  
+  display: grid;
+  grid-template-columns: 30px auto 1fr 30px;
+  grid-template-rows: 16px auto 1fr repeat(3, 112px) 1fr 48px;
+  grid-template-areas: ". . . ."
+                       ". logo close ." 
+                       ". . . ." 
+                       ". purplelabs purplelabs ."
+                       ". purplelabs-healthcare purplelabs-healthcare ."
+                       ". recruit recruit .";
+
+  .menu__logo {
+    width: 58px; 
+  }
+
+  .menu__close {
+    margin-left: auto;
+    grid-area: close;
+  }
+
+  .menu__purplelabs,
+  .menu__purplelabs-healthcare,
+  .menu__recruit { 
+    padding: 43px 0 43px 0;
+    width: 260px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .menu__purplelabs,
+  .menu__purplelabs-healthcare {
+    border-bottom: 1px solid #ffffff1a;
+  }
+
+  .menu__logo-container { grid-area: logo; }
+  .menu__purplelabs { grid-area: purplelabs; }
+  .menu__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
+  .menu__recruit { grid-area: recruit; }
+}
