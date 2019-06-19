@@ -39,7 +39,8 @@
 .news .news__title { border-bottom: 1px solid #999999; color: #333333; text-align: center; }
 
 .article { border-bottom: 1px solid #ebebeb; }
-.article .article__title { grid-area: title; color: #333333; }
+.article .article__title { text-decoration: none; grid-area: title; color: #333333; }
+.article .article__title:hover { color: #663399; }
 .article .article__press { grid-area: press; color: #999999; }
 .article .article__dot { grid-area: dot; color: #cccccc; font-size: 25px; }
 .article .article__date { grid-area: date; color: #999999; }
