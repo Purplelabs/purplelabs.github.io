@@ -103,7 +103,7 @@
 .service .service__image1, .service .service__image2, .service .service__image3, .service .service__image4, .service .service__image5, .service .service__image6 { width: 100%; }
 
 .service-description .service-description__title { color: #666666; }
-.service-description .service-description__button { color: #663399; }
+.service-description .service-description__button { color: #663399; text-decoration: none; }
 
 .comment .comment-content { grid-area: content; }
 .comment .comment-navigator { grid-area: navigator; }
