@@ -1,27 +1,33 @@
-function debounce(func, wait = 5, immediate = true) {
+function debounce(func) {
   var timeout;
   return function() {
     var context = this, args = arguments;
     var later = function() {
       timeout = null;
-      if (!immediate) func.apply(context, args);
+      func.apply(context, args);
     };
-    var callNow = immediate && !timeout;
+    var callNow = !timeout;
     clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
+    timeout = setTimeout(later, 5);
     if (callNow) func.apply(context, args);
   };
 };
 
 function updateHeader() {
   const header = document.querySelector('header');
-  if (window.scrollY < 50) {
+  if (document.documentElement.scrollTop < 50) {
     header.classList.remove('header--scrolled');
     header.classList.add('header');
   } else {
     header.classList.add('header--scrolled');
     header.classList.remove('header');
   }
+}
+
+function updateHeader2() {
+  const header = document.querySelector('header');
+    header.classList.remove('header--scrolled');
+    header.classList.add('header');
 }
 
 window.addEventListener('scroll', debounce(updateHeader));
@@ -31,11 +37,11 @@ const hamburgerWhite = document.querySelector('.header__hamburger-white');
 const hamburgerBlack = document.querySelector('.header__hamburger-black');
 const close = document.querySelector('.menu__close');
 
-const openMenu = () => {
+function openMenu() {
   menu.style = null;
 };
 
-const closeMenu = () => {
+function closeMenu () {
   menu.style.display = 'none';
 };
 

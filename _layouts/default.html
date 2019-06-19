@@ -20,10 +20,10 @@
   {% include footer.html %}
   {% include header.html %}
   {% include menu.html %}
-</body>
 
-<script src="assets/js/header.js"></script>
-{% if page.script %}
-  <script src={{page.script}}></script>
-{% endif %}
+  <script src="assets/js/header.js"></script>
+  {% if page.script %}
+    <script src={{page.script}}></script>
+  {% endif %}
+</body>
 </html>
