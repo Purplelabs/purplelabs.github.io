@@ -36,7 +36,7 @@
   .card .card__title { font-size: 20px; line-height: 1.6; }
   .purple-culture { padding: 50px 30px 20px 30px; display: grid; justify-content: stretch; align-content: center; justify-items: stretch; }
   .purple-culture .purple-culture__title { font-size: 28px; text-align: center; }
-  .culture { padding: 30px; display: grid; justify-content: center; grid-column-gap: 12px; grid-row-gap: 20px; grid-template-columns: 4px auto; }
+  .culture { padding: 30px; display: grid; grid-column-gap: 12px; grid-row-gap: 20px; grid-template-columns: 4px auto; }
   .culture .culture__title { grid-column: 1 / -1; font-size: 20px; line-height: 1.6; }
   .culture .culture__dot { grid-column: 1; align-self: center; }
   .culture .culture__content { grid-column: 2; font-size: 14px; align-self: center; }
