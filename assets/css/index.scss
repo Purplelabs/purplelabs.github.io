@@ -184,9 +184,15 @@
     color: #666666;
   }
 
-  .directions__map {
+  .directions__map-container {
+    overflow: hidden;
     grid-area: map;
-    width: 100%;
+
+    .directions__map {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .directions__title {
@@ -303,6 +309,22 @@
       font-size: 14px;
     }
   }
+
+  .directions {
+    display: grid;
+    grid-row-gap: 8px;
+    grid-template-columns: minmax(30px, 1fr) 367px 657px minmax(30px, 1fr);
+    grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
+    grid-template-areas: ". . map ."
+                         ". title map ."
+                         ". . map ."
+                         ". address-key map ."
+                         ". address-value map ."
+                         ". . map ."
+                         ". contact-key map ."
+                         ". contact-value map ."
+                         ". . map .";
+  }
 }
 
 @media (max-width: 1199px) {
@@ -413,27 +435,26 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (max-width: 1199px) and (min-width: 960px) {
   .directions {
     display: grid;
-    grid-column-gap: 15px;
     grid-row-gap: 8px;
-    grid-template-columns: 209fr 209fr minmax(337px, auto) 145fr auto;
+    grid-template-columns: 30px 367px auto;
     grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
-    grid-template-areas: ". . . . map"
-                         ". . title . map"
-                         ". . . . map"
-                         ". . address-key . map"
-                         ". . address-value . map"
-                         ". . . . map"
-                         ". . contact-key . map"
-                         ". . contact-value . map"
-                         ". . . . map";
-  
-    .directions__map {
-      min-width: 768px;
-    }
-  
+    grid-template-areas: ". . map"
+                         ". title map"
+                         ". . map"
+                         ". address-key map"
+                         ". address-value map"
+                         ". . map"
+                         ". contact-key map"
+                         ". contact-value map"
+                         ". . map";
+  }
+}
+
+@media (min-width: 960px) {
+  .directions {
     .directions__title {
       font-size: 28px;
       line-height: 1.5;
@@ -479,6 +500,12 @@
     .directions__address-value,
     .directions__contact-value {
       font-size: 13px;
+    }
+
+    .directions__map {
+      width: 100%;
+      height: auto;
+      min-width: 600px;
     }
   }
 }

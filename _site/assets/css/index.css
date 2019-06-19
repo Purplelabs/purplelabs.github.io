@@ -49,7 +49,8 @@
 .directions { background-color: #f5f5f5; overflow: hidden; }
 .directions .directions__address-key, .directions .directions__contact-key { color: #333333; }
 .directions .directions__address-value, .directions .directions__contact-value { color: #666666; }
-.directions .directions__map { grid-area: map; width: 100%; }
+.directions .directions__map-container { overflow: hidden; grid-area: map; }
+.directions .directions__map-container .directions__map { position: relative; left: 50%; transform: translateX(-50%); }
 .directions .directions__title { grid-area: title; color: #333333; }
 .directions .directions__address-key { grid-area: address-key; }
 .directions .directions__address-value { grid-area: address-value; }
@@ -70,7 +71,8 @@
   .article { padding: 39px 26px 39px 0px; display: grid; justify-items: start; align-items: center; grid-gap: 10px; grid-template-columns: auto auto 1fr auto; grid-template-areas: "title title title arrow" "press dot date arrow"; }
   .article .article__title { font-size: 18px; }
   .article .article__press { font-size: 14px; }
-  .article .article__date { font-size: 14px; } }
+  .article .article__date { font-size: 14px; }
+  .directions { display: grid; grid-row-gap: 8px; grid-template-columns: minmax(30px, 1fr) 367px 657px minmax(30px, 1fr); grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr; grid-template-areas: ". . map ." ". title map ." ". . map ." ". address-key map ." ". address-value map ." ". . map ." ". contact-key map ." ". contact-value map ." ". . map ."; } }
 @media (max-width: 1199px) { .history { margin: 50px 25px 50px 25px; display: grid; grid-column-gap: 16px; grid-row-gap: 8px; justify-items: center; grid-template-columns: 24px 1fr; grid-template-rows: 40px auto 24px repeat(4, 16px 48px) 16px; grid-template-areas: "title title" "content content" ". ." "point1 date1" ". event1" "point2 date2" ". event2" "point3 date3" ". event3" "point4 date4" ". event4" "point5 date5" ". event5"; }
   .history .history__title { font-size: 28px; }
   .history .history__timeline { width: 1px; height: 500px; margin-top: 5px; }
@@ -85,11 +87,11 @@
   .article .article__title { font-size: 16px; line-height: 1.88; }
   .article .article__press { font-size: 13px; }
   .article .article__date { font-size: 13px; } }
-@media (min-width: 960px) { .directions { display: grid; grid-column-gap: 15px; grid-row-gap: 8px; grid-template-columns: 209fr 209fr minmax(337px, auto) 145fr auto; grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr; grid-template-areas: ". . . . map" ". . title . map" ". . . . map" ". . address-key . map" ". . address-value . map" ". . . . map" ". . contact-key . map" ". . contact-value . map" ". . . . map"; }
-  .directions .directions__map { min-width: 768px; }
-  .directions .directions__title { font-size: 28px; line-height: 1.5; }
+@media (max-width: 1199px) and (min-width: 960px) { .directions { display: grid; grid-row-gap: 8px; grid-template-columns: 30px 367px auto; grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr; grid-template-areas: ". . map" ". title map" ". . map" ". address-key map" ". address-value map" ". . map" ". contact-key map" ". contact-value map" ". . map"; } }
+@media (min-width: 960px) { .directions .directions__title { font-size: 28px; line-height: 1.5; }
   .directions .directions__address-key, .directions .directions__contact-key, .directions .directions__address-value, .directions .directions__contact-value { font-size: 13px; } }
 @media (max-width: 959px) { .directions { padding-top: 50px; display: grid; grid-row-gap: 6px; grid-template-columns: 30px auto 30px; grid-template-rows: auto 24px auto auto 14px auto 58px 1fr; grid-template-areas: ". title ." ". . ."  ". address-key ." ". address-value ." ". . ." ". contact-key ." ". contact-value ." ". . ." "map map map"; }
   .directions .directions__map { min-width: 768px; }
   .directions .directions__title { font-size: 28px; line-height: 1.5; }
-  .directions .directions__address-key, .directions .directions__contact-key, .directions .directions__address-value, .directions .directions__contact-value { font-size: 13px; } }
+  .directions .directions__address-key, .directions .directions__contact-key, .directions .directions__address-value, .directions .directions__contact-value { font-size: 13px; }
+  .directions .directions__map { width: 100%; height: auto; min-width: 600px; } }
