@@ -5,7 +5,7 @@ const tabMember = document.querySelector('.tab__member');
 const sectionCompany = document.querySelector('.company');
 const sectionGoal = document.querySelector('.goal');
 const sectionService = document.querySelector('.service');
-const sectionComment = document.querySelector('.comment');
+// const sectionComment = document.querySelector('.comment');
 const sectionMember = document.querySelector('.member');
 const sectionBottomImageContainer = document.querySelector('.bottom-image-container');
 
@@ -22,7 +22,7 @@ const clickCompany = () => {
   sectionCompany.style = null;
   sectionGoal.style = null;
   sectionService.style.display = 'none';
-  sectionComment.style.display = 'none';
+  // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
   sectionBottomImageContainer.style = null;
 };
@@ -34,7 +34,7 @@ const clickService = () => {
   sectionCompany.style.display = 'none';
   sectionGoal.style.display = 'none';
   sectionService.style = null;
-  sectionComment.style.display = 'none';
+  // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
   sectionBottomImageContainer.style.display = 'none';
 };
@@ -46,7 +46,7 @@ const clickMember = () => {
   sectionCompany.style.display = 'none';
   sectionGoal.style.display = 'none';
   sectionService.style.display = 'none';
-  sectionComment.style = null;
+  // sectionComment.style = null;
   sectionMember.style = null;
   sectionBottomImageContainer.style.display = 'none';
 };
