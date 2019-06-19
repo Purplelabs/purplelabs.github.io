@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
   <link rel="stylesheet" type="text/css" href="assets/css/default.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
   <link rel="stylesheet" type="text/css" href={{page.stylesheet}}>
   
   <title>
@@ -19,10 +21,10 @@
   {% include footer.html %}
   {% include header.html %}
   {% include menu.html %}
-</body>
 
-<script src="assets/js/header.js"></script>
-{% if page.script %}
-  <script src={{page.script}}></script>
-{% endif %}
+  <script src="assets/js/header.js"></script>
+  {% if page.script %}
+    <script src={{page.script}}></script>
+  {% endif %}
+</body>
 </html>
