@@ -9,7 +9,7 @@
 .index.bottom-image-container .index.bottom-image-container__image { min-width: 1536px; }
 
 .index.bottom-text-container .index.bottom-text-container__title { grid-area: title; color: #333333; }
-.index.bottom-text-container .index.bottom-text-container__button { grid-area: button; color: #663399; }
+.index.bottom-text-container .index.bottom-text-container__button { grid-area: button; color: #663399; text-decoration: none; }
 
 .history .history__timeline, .history .history__point1, .history .history__point2, .history .history__point3, .history .history__point4, .history .history__point5 { background-color: #663399; }
 .history .history__date1, .history .history__date2, .history .history__date3, .history .history__date4, .history .history__date5 { color: #663399; }
