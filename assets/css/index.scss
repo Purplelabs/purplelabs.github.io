@@ -271,7 +271,7 @@
 
   .news {
     display: grid;
-    grid-template-columns: minmax(30px, 448px) minmax(1024px, auto) minmax(30px, 448px);
+    grid-template-columns: minmax(30px, 1fr) 1024px minmax(30px, 1fr);
     margin: 100px 0 100px 0;
   
     .news__title {
