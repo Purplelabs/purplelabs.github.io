@@ -66,14 +66,11 @@
   team: 커뮤니케이션 팀
   photo: assets/images/purplelabs-healthcare/member/img-plh-03-member-soyoung.svg
   comment: 소개글 필요
-- name: 이남경 매니저
-  team: 그로스랩 파트
-  photo: assets/images/purplelabs-healthcare/member/img-plh-03-member-namgyung.svg
-  comment: 소개글 필요
-- name: 강대호 매니저
-  team: 비디오 파트
-  photo: assets/images/purplelabs-healthcare/member/img-plh-03-member-daeho.svg
-  comment: 소개글 필요
-
-
-
+# - name: 이남경 매니저
+#   team: 그로스랩 파트
+#   photo: assets/images/purplelabs-healthcare/member/img-plh-03-member-namgyung.svg
+#   comment: 소개글 필요
+# - name: 강대호 매니저
+#   team: 비디오 파트
+#   photo: assets/images/purplelabs-healthcare/member/img-plh-03-member-daeho.svg
+#   comment: 소개글 필요
