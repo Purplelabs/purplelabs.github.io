@@ -74,6 +74,7 @@
 @media (max-width: 1199px) { .history { margin: 50px 25px 50px 25px; display: grid; grid-column-gap: 16px; grid-row-gap: 8px; justify-items: center; grid-template-columns: 24px 1fr; grid-template-rows: 40px auto 24px repeat(4, 16px 48px) 16px; grid-template-areas: "title title" "content content" ". ." "point1 date1" ". event1" "point2 date2" ". event2" "point3 date3" ". event3" "point4 date4" ". event4" "point5 date5" ". event5"; }
   .history .history__title { font-size: 28px; }
   .history .history__timeline { width: 1px; height: 500px; margin-top: 5px; }
+  .history .history__content { max-width: 750px; }
   .history .history__date1, .history .history__date2, .history .history__date3, .history .history__date4, .history .history__date5, .history .history__event1, .history .history__event2, .history .history__event3, .history .history__event4, .history .history__event5 { font-size: 14px; justify-self: start; }
   .index.bottom-text-container { padding-top: 50px; display: grid; grid-gap: 20px; justify-content: center; grid-template-rows: auto 1fr; grid-template-areas: "title" "button"; }
   .index.bottom-text-container .index.bottom-text-container__title { font-size: 20px; line-height: 1.6; }
