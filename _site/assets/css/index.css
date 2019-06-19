@@ -76,8 +76,8 @@
   .history .history__timeline { width: 1px; height: 500px; margin-top: 5px; }
   .history .history__content { max-width: 750px; }
   .history .history__date1, .history .history__date2, .history .history__date3, .history .history__date4, .history .history__date5, .history .history__event1, .history .history__event2, .history .history__event3, .history .history__event4, .history .history__event5 { font-size: 14px; justify-self: start; }
-  .index.bottom-text-container { padding-top: 50px; display: grid; grid-gap: 20px; justify-content: center; grid-template-rows: auto 1fr; grid-template-areas: "title" "button"; }
-  .index.bottom-text-container .index.bottom-text-container__title { font-size: 20px; line-height: 1.6; }
+  .index.bottom-text-container { padding: 50px 30px 50px 30px; display: grid; grid-gap: 20px; justify-content: center; grid-template-rows: auto 1fr; grid-template-areas: "title" "button"; }
+  .index.bottom-text-container .index.bottom-text-container__title { font-size: 20px; line-height: 1.6; max-width: 380px; }
   .index.bottom-text-container .index.bottom-text-container__button { font-size: 13px; }
   .news { display: grid; grid-template-columns: 30px auto 30px; margin: 50px 0 50px 0; }
   .news .news__title { padding-bottom: 20px; font-size: 28px; }

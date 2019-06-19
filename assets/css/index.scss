@@ -358,7 +358,7 @@
   }
 
   .index.bottom-text-container {
-    padding-top: 50px;
+    padding: 50px 30px 50px 30px;
     display: grid;
     grid-gap: 20px;
     justify-content: center;
@@ -368,6 +368,7 @@
     .index.bottom-text-container__title {
       font-size: 20px;
       line-height: 1.6;
+      max-width: 380px;
     }
   
     .index.bottom-text-container__button {
