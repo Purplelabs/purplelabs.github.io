@@ -61,6 +61,7 @@
     border-radius: 4px;
     background-color: white;
     color: #663399;
+    text-decoration: none;
   }
 }
 
@@ -201,7 +202,6 @@
   .culture {
     padding: 30px;
     display: grid; 
-    justify-content: center;
     grid-column-gap: 12px;
     grid-row-gap: 20px;
     grid-template-columns: 4px auto;
