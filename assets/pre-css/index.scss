@@ -152,6 +152,21 @@
       width: 1024px;
     }
   }
+  .directions {
+    display: grid;
+    grid-row-gap: 8px;
+    grid-template-columns: minmax(30px, 1fr) 367px 657px minmax(30px, 1fr);
+    grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
+    grid-template-areas: ". . map ."
+                         ". title map ."
+                         ". . map ."
+                         ". address-key map ."
+                         ". address-value map ."
+                         ". . map ."
+                         ". contact-key map ."
+                         ". contact-value map ."
+                         ". . map .";
+  }
 }
 
 @media (max-width: 1199px) {
@@ -382,5 +397,117 @@
   * {
     justify-self: start;
     align-self: center;
+  }
+}
+
+
+.directions {
+  background-color: #f5f5f5;
+  overflow: hidden;
+
+  .directions__address-key,
+  .directions__contact-key {
+    color: #333333;
+  }
+
+  .directions__address-value,
+  .directions__contact-value {
+    color: #666666;
+  }
+
+  .directions__map-container {
+    overflow: hidden;
+    grid-area: map;
+
+    .directions__map {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .directions__title {
+    grid-area: title;
+    color: #333333;
+  }
+
+  .directions__address-key { grid-area: address-key; }
+  .directions__address-value { grid-area: address-value; }
+  .directions__contact-key { grid-area: contact-key; }
+  .directions__contact-value { grid-area: contact-value; }
+}
+
+@media (max-width: 1199px) and (min-width: 960px) {
+  .directions {
+    display: grid;
+    grid-row-gap: 8px;
+    grid-template-columns: 30px 367px auto;
+    grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
+    grid-template-areas: ". . map"
+                         ". title map"
+                         ". . map"
+                         ". address-key map"
+                         ". address-value map"
+                         ". . map"
+                         ". contact-key map"
+                         ". contact-value map"
+                         ". . map";
+  }
+}
+
+@media (min-width: 960px) {
+  .directions {
+    .directions__title {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+  
+    .directions__address-key,
+    .directions__contact-key,
+    .directions__address-value,
+    .directions__contact-value {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 959px) {
+  .directions {
+    padding-top: 50px;
+    display: grid;
+    grid-row-gap: 6px;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: auto 24px auto auto 14px auto 58px 1fr;
+    grid-template-areas: ". title ." 
+                         ". . ." 
+                         ". address-key ."
+                         ". address-value ."
+                         ". . ."
+                         ". contact-key ."
+                         ". contact-value ."
+                         ". . ."
+                         "map map map";
+  
+    .directions__map {
+      min-width: 768px;
+    }
+  
+    .directions__title {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+  
+    .directions__address-key,
+    .directions__contact-key,
+    .directions__address-value,
+    .directions__contact-value {
+      font-size: 13px;
+    }
+
+    .directions__map {
+      width: 100%;
+      height: auto;
+      min-width: 600px;
+    }
   }
 }
