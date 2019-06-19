@@ -1,0 +1,96 @@
+---
+---
+footer {
+  border-top: 1px solid #ebebeb;
+
+  .footer__purplelabs,
+  .footer__purplelabs-healthcare,
+  .footer__recruit {
+    color: #666666;
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 30px;
+  }
+
+  .footer__copyright {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "mobile default";
+
+    .footer__copyright--mobile { 
+      color: #999999;
+      grid-area: mobile;
+    }
+  
+    .footer__copyright--default {
+      color: #999999;
+      font-size: 11px;
+      grid-area: default;
+    }
+  }
+
+  * {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1921px) {
+  footer {
+    padding: 0 448px 0 448px;
+    display: flex;
+    justify-content: stretch;
+
+    .footer__recruit {
+      flex: 1;
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1920px) {
+  footer {
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: center;
+
+    .footer__recruit {
+      flex-basis: 532px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    height: 88px;
+
+    .footer__copyright--mobile {
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  footer {
+    height: 64px;
+
+    .footer__purplelabs,
+    .footer__purplelabs-healthcare,
+    .footer__recruit,
+    .footer__copyright--default {
+      display: none;
+    }
+
+    .footer__copyright--mobile {
+      font-size: 12px;
+    }
+  }
+}

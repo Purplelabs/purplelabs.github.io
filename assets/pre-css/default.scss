@@ -22,3 +22,9 @@ body {
   .bolder { font-weight: 800; }
   .light { font-weight: 300; }
 }
+
+@media (max-width: 1199px) {
+  .desktop-br {
+    display: none;
+  }
+}
