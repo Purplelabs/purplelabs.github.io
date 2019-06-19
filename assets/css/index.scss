@@ -47,6 +47,7 @@
   .index.bottom-text-container__button {
     grid-area: button;
     color: #663399;
+    text-decoration: none;
   }
 }
 
@@ -139,8 +140,13 @@
   border-bottom: 1px solid #ebebeb;
 
   .article__title {
+    text-decoration: none;
     grid-area: title;
     color: #333333;
+  }
+
+  .article__title:hover {
+    color: #663399;
   }
 
   .article__press {
@@ -178,9 +184,15 @@
     color: #666666;
   }
 
-  .directions__map {
+  .directions__map-container {
+    overflow: hidden;
     grid-area: map;
-    width: 100%;
+
+    .directions__map {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .directions__title {
@@ -265,7 +277,7 @@
 
   .news {
     display: grid;
-    grid-template-columns: minmax(30px, 448px) minmax(1024px, auto) minmax(30px, 448px);
+    grid-template-columns: minmax(30px, 1fr) 1024px minmax(30px, 1fr);
     margin: 100px 0 100px 0;
   
     .news__title {
@@ -296,6 +308,22 @@
     .article__date {
       font-size: 14px;
     }
+  }
+
+  .directions {
+    display: grid;
+    grid-row-gap: 8px;
+    grid-template-columns: minmax(30px, 1fr) 367px 657px minmax(30px, 1fr);
+    grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
+    grid-template-areas: ". . map ."
+                         ". title map ."
+                         ". . map ."
+                         ". address-key map ."
+                         ". address-value map ."
+                         ". . map ."
+                         ". contact-key map ."
+                         ". contact-value map ."
+                         ". . map .";
   }
 }
 
@@ -332,6 +360,10 @@
       margin-top: 5px;
     }
 
+    .history__content {
+      max-width: 750px;
+    }
+
     .history__date1,
     .history__date2,
     .history__date3,
@@ -348,7 +380,7 @@
   }
 
   .index.bottom-text-container {
-    padding-top: 50px;
+    padding: 50px 30px 50px 30px;
     display: grid;
     grid-gap: 20px;
     justify-content: center;
@@ -358,6 +390,7 @@
     .index.bottom-text-container__title {
       font-size: 20px;
       line-height: 1.6;
+      max-width: 380px;
     }
   
     .index.bottom-text-container__button {
@@ -402,27 +435,26 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (max-width: 1199px) and (min-width: 960px) {
   .directions {
     display: grid;
-    grid-column-gap: 15px;
     grid-row-gap: 8px;
-    grid-template-columns: 209fr 209fr minmax(337px, auto) 145fr auto;
+    grid-template-columns: 30px 367px auto;
     grid-template-rows: 74fr auto 36fr auto auto 14fr auto auto 72fr;
-    grid-template-areas: ". . . . map"
-                         ". . title . map"
-                         ". . . . map"
-                         ". . address-key . map"
-                         ". . address-value . map"
-                         ". . . . map"
-                         ". . contact-key . map"
-                         ". . contact-value . map"
-                         ". . . . map";
-  
-    .directions__map {
-      min-width: 768px;
-    }
-  
+    grid-template-areas: ". . map"
+                         ". title map"
+                         ". . map"
+                         ". address-key map"
+                         ". address-value map"
+                         ". . map"
+                         ". contact-key map"
+                         ". contact-value map"
+                         ". . map";
+  }
+}
+
+@media (min-width: 960px) {
+  .directions {
     .directions__title {
       font-size: 28px;
       line-height: 1.5;
@@ -468,6 +500,12 @@
     .directions__address-value,
     .directions__contact-value {
       font-size: 13px;
+    }
+
+    .directions__map {
+      width: 100%;
+      height: auto;
+      min-width: 600px;
     }
   }
 }

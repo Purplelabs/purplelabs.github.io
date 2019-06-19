@@ -1,5 +1,17 @@
 ---
 ---
+.header {
+  .header__purplelabs-healthcare {
+    border-bottom: 2px solid white;
+  }
+}
+
+.header--scrolled {
+  .header__purplelabs-healthcare {
+    border-bottom: 2px solid #333333;
+  }
+}
+
 .top-image-container,
 .bottom-image-container {
   overflow: hidden;
@@ -508,6 +520,7 @@
   
   .service-description__button {
     color: #663399;
+    text-decoration: none;
   }
 }
 

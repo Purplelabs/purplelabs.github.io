@@ -19,6 +19,8 @@ header .header__purplelabs { grid-area: purplelabs; }
 header .header__purplelabs-healthcare { grid-area: purplelabs-healthcare; }
 header .header__recruit { grid-area: recruit; }
 
+.header__purplelabs, .header__purplelabs-healthcare, .header__recruit { padding: 5px 0 5px 0; }
+
 .header { background-color: transparent; }
 .header .header__purplelabs, .header .header__purplelabs-healthcare, .header .header__recruit { color: white; }
 
