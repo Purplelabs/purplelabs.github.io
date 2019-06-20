@@ -19,12 +19,12 @@ function clickCompany() {
   selectTab(tabCompany, true);
   selectTab(tabService, false);
   selectTab(tabMember, false);
-  sectionCompany.style = null;
-  sectionGoal.style = null;
+  sectionCompany.style.display = '';
+  sectionGoal.style.display = '';
   sectionService.style.display = 'none';
   // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
-  sectionBottomImageContainer.style = null;
+  sectionBottomImageContainer.style.display = '';
 }
 
 function clickService() {
@@ -33,7 +33,7 @@ function clickService() {
   selectTab(tabMember, false);
   sectionCompany.style.display = 'none';
   sectionGoal.style.display = 'none';
-  sectionService.style = null;
+  sectionService.style.display = '';
   // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
   sectionBottomImageContainer.style.display = 'none';
@@ -47,7 +47,7 @@ function clickMember() {
   sectionGoal.style.display = 'none';
   sectionService.style.display = 'none';
   // sectionComment.style = null;
-  sectionMember.style = null;
+  sectionMember.style.display = '';
   sectionBottomImageContainer.style.display = 'none';
 }
 
