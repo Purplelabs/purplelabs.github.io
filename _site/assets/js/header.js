@@ -11,7 +11,7 @@ function debounce(func) {
     timeout = setTimeout(later, 5);
     if (callNow) func.apply(context, args);
   };
-};
+}
 
 function updateHeader() {
   const header = document.querySelector('header');
@@ -38,12 +38,12 @@ const hamburgerBlack = document.querySelector('.header__hamburger-black');
 const close = document.querySelector('.menu__close');
 
 function openMenu() {
-  menu.style = null;
-};
+  menu.style.display = '';
+}
 
 function closeMenu () {
   menu.style.display = 'none';
-};
+}
 
 hamburgerWhite.addEventListener('click', openMenu);
 hamburgerBlack.addEventListener('click', openMenu);
