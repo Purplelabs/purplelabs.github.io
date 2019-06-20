@@ -57,7 +57,8 @@ stylesheet: assets/css/index.css
 <section class="news">
   <p class="light news__title">언론속의 퍼플랩스</p>
   {% for article in site.data.index__news %}
-    {% include index/article.html link = article.link title = article.title press = article.press date = article.date %}
+    {% include index/article.html 
+      index = forloop.index link = article.link title = article.title press = article.press date = article.date %}
   {% endfor %}
 </section>
 

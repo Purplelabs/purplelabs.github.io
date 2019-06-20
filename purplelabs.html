@@ -82,7 +82,8 @@ script: assets/js/purplelabs.js
 
 <section class="member" style="display: none;">
   {% for member in site.data.purplelabs__members %}
-    {% include member/person.html photo= member.photo name = member.name team = member.team comment = member.comment %}
+    {% include member/person.html 
+      index = forloop.index photo = member.photo name = member.name team = member.team comment = member.comment %}
   {% endfor %}
 </section>
 

@@ -1,0 +1,74 @@
+---
+---
+.menu {
+  z-index: 20;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.95;
+  padding: 0 30px 0 30px; 
+  display: -webkit-flex; 
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+
+  .menu__bar {
+    height: 66px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: center;
+            align-items: center;
+
+    .menu__logo {
+      width: 100%;
+      max-width: 58px; 
+      -webkit-flex: 1; 
+              flex: 1;
+      margin-right: auto;
+    }
+
+    .menu__close {
+      cursor: pointer;
+      -webkit-align-self: center;
+                  -ms-grid-row-align: center;
+              align-self: center;
+    }
+  }
+  
+  .menu__content {
+    -webkit-flex: 1;
+            flex: 1;
+    display: -webkit-flex;
+    display: flex; 
+    -webkit-flex-direction: column; 
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+
+    .menu__purplelabs,
+    .menu__purplelabs-healthcare,
+    .menu__recruit { 
+      padding: 43px 0 43px 0;
+      width: 260px;
+      font-size: 24px;
+      -ms-grid-column-align: center;
+          justify-self: center;
+      -webkit-align-self: center;
+                  -ms-grid-row-align: center;
+              align-self: center;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    .menu__purplelabs,
+    .menu__purplelabs-healthcare {
+      border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+    }
+  }
+}

@@ -27,8 +27,8 @@ stylesheet: assets/css/recruit.css
         <p class="normal culture__title">{{ purple-culture.title }}</p> 
 
         {% for content in purple-culture.contents %}
-          <div class="culture__dot"></div>
-          <p class="normal culture__content">{{ content.text }}</p>
+          <div class="culture__dot dot{{forloop.index}}"></div>
+          <p class="normal culture__content content{{forloop.index}}">{{ content.text }}</p>
         {% endfor %}
       </div>
   {% endfor %}

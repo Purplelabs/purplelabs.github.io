@@ -1,0 +1,154 @@
+---
+---
+header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .header__hamburger-white,
+  .header__hamburger-black {
+    cursor: pointer;
+  }
+
+  .header__purplelabs,
+  .header__purplelabs-healthcare,
+  .header__recruit {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 0 6px 0;
+    margin-left: 48px
+  }
+
+  * {
+    -webkit-align-self: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+  }
+}
+
+.header {
+  background-color: transparent;
+
+  .header__purplelabs,
+  .header__purplelabs-healthcare,
+  .header__recruit {
+    color: white;
+  }
+}
+
+.header--scrolled {
+  background-color: white;
+
+  .header__purplelabs,
+  .header__purplelabs-healthcare,
+  .header__recruit {
+    color: #333333;
+  }
+}
+
+@media (min-width: 1921px) {
+  header {
+    padding: 0 448px 0 448px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: stretch;
+            justify-content: stretch;
+
+    .header__logo-purple,
+    .header__logo-white {
+      -webkit-flex: 1;
+              flex: 1;
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1920px) {
+  header {
+    padding: 0 30px 0 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+
+    .header__logo-purple,
+    .header__logo-white {
+      -webkit-flex-basis: 697px;
+              flex-basis: 697px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 0 30px 0 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: stretch;
+            justify-content: stretch;
+
+    .header__logo-white--mobile,
+    .header__logo-purple--mobile {
+      -webkit-flex: 1;
+              flex: 1;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  header {
+    height: 88px;
+
+    .header__logo-white--mobile,
+    .header__logo-purple--mobile, 
+    .header__hamburger-white, 
+    .header__hamburger-black {
+      display: none;
+    }
+  }
+
+  .header {
+    .header__logo-purple {
+      display: none;
+    }
+  }
+
+  .header--scrolled {
+    .header__logo-white {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  header {  
+    height: 64px;
+
+    .header__logo-white--m,
+    .header__logo-purple--m {
+      height: 32px;
+    }
+
+    .header__logo-white,
+    .header__logo-purple,
+    .header__purplelabs,
+    .header__purplelabs-healthcare,
+    .header__recruit {
+      display: none;
+    }
+  }
+
+  .header {
+    .header__logo-purple--mobile,
+    .header__hamburger-black {
+      display: none;
+    }
+  }
+
+  .header--scrolled {
+    .header__logo-white--mobile,
+    .header__hamburger-white {
+      display: none;
+    }
+  }
+}
