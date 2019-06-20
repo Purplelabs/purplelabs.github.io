@@ -1,0 +1,651 @@
+---
+---
+.header {
+  .header__purplelabs-healthcare {
+    border-bottom: 2px solid white;
+  }
+}
+
+.header--scrolled {
+  .header__purplelabs-healthcare {
+    border-bottom: 2px solid #333333;
+  }
+}
+
+.top-image-container,
+.bottom-image-container {
+  overflow: hidden;
+  position: relative;
+
+  .top-image-container__image,
+  .bottom-image-container__image {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bottom-text-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.purplelabs-healthcare.top-image-container {
+  max-height: 560px;
+
+  .purplelabs-healthcare.top-image-container__image {
+    min-width: 960px;
+  }
+}
+
+.purplelabs-healthcare.bottom-image-container {
+  max-height: 400px;
+
+  .purplelabs-healthcare.bottom-image-container__image {
+    min-width: 1920px;
+  }
+}
+
+.purplelabs-healthcare.bottom-text-container {
+  .purplelabs-healthcare.bottom-text-container__title,
+  .purplelabs-healthcare.bottom-text-container__content {
+    color: white;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .purplelabs-healthcare.bottom-text-container {
+    margin: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .purplelabs-healthcare.bottom-text-container__title {
+      font-size: 36px;
+      line-height: 1.5;
+      flex-basis: 60px;
+    }
+
+    .purplelabs-healthcare.bottom-text-container__content {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .purplelabs-healthcare.bottom-text-container {
+    margin: 50px 10px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+    .purplelabs-healthcare.bottom-text-container__title {
+      font-size: 28px;
+      flex-basis: 51px;
+    }
+  
+    .purplelabs-healthcare.bottom-text-container__content {
+      font-size: 16px;
+      line-height: 1.88;
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .tab {
+    height: 72px;
+  
+    .tab__company,
+    .tab__service,
+    .tab__member {
+      padding: 25px 0 25px 0;
+      font-size: 20px;
+    }
+  }
+
+  .company {
+    padding: 100px 0 100px 0;
+    display: grid;
+    grid-column-gap: 48px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 464px 512px 1fr;
+    grid-template-areas: ". slogan paragraph1 ."
+                         ". slogan paragraph2 ."
+                         ". slogan paragraph3 ."
+                         ". slogan paragraph4 .";
+  }
+
+  .slogan {
+    display: grid;
+    grid-template-columns: 40px repeat(2, auto) 1fr;
+    grid-template-rows: repeat(3, auto) 1fr;
+    grid-template-areas: "open line-start line-start ."
+                         ". lines lines ."
+                         ". line-end close .";
+    
+    .slogan__mobile {
+      display: none;
+    }
+  }
+
+  .goal {
+    padding: 100px 0 100px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr repeat(3, 335px) 1fr;
+    grid-template-rows: 70px 180px 180px;
+    grid-template-areas: ". title title title ." ". card1 card2 card3 ." ". card4 card5 card6 .";
+
+    .goal__title {
+      font-size: 36px;
+    }
+  }
+
+  .card {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+  
+    .card__number {
+      font-size: 18px;
+    }
+  
+    .card__title {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+
+  .service {
+    padding-bottom: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr repeat(3, 335px) 1fr;
+    grid-template-rows: 640px repeat(3, 250);
+    grid-template-areas: ". image1 image1 image1 ."
+                         ". image2 image3 image4 ."
+                         ". image2 image6 image6 ."
+                         ". image5 image6 image6 .";
+
+    .service-description,
+    .service__container1 { grid-area: image1; }
+    .service__container2 { grid-area: image2; }
+    .service__container3 { grid-area: image3; }
+    .service__container4 { grid-area: image4; }
+    .service__container5 { grid-area: image5; }
+    .service__container6 { grid-area: image6; }
+  }
+  
+  .service__image1 {
+    z-index: -1;
+  }
+
+  .service-description {
+    z-index: 2;
+    padding: 200px 0 0 40px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: 45px minmax(73px, auto) 1fr;
+
+    * {
+      justify-self: start;
+      align-self: start;
+    }
+
+    .service-description__logo {
+      width: 185px;
+    }
+
+    .service-description__title {
+      width: 185px;
+      font-size: 24px;
+      line-height: 1.42;
+    }
+    
+    .service-description__button {
+      font-size: 14px;
+      padding: 8px 15px 8px 15px;
+      border-radius: 10px;
+    }
+  }
+
+  .member {
+    padding: 24px 0 24px 0;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr repeat(4, 216px) 1fr;
+    grid-template-rows: repeat(3, 280px);
+    grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 . .";
+  }
+}
+
+@media (max-width: 1199px) {
+  .tab {
+    height: 60px;
+  
+    .tab__company,
+    .tab__service,
+    .tab__member {
+      padding: 21px 0 21px 0;
+      font-size: 16px;
+    }
+  }
+
+  .company {
+    padding: 50px 0 50px 0;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: auto 10px;
+    grid-template-areas: ". slogan ."
+                         ". . ."
+                         ". paragraph1 ."
+                         ". paragraph2 ."
+                         ". paragraph3 ."
+                         ". paragraph4 .";
+  }
+
+  .slogan {
+    display: grid;
+    
+    .slogan__open,
+    .slogan__close,
+    .slogan__line-start,
+    .slogan__lines,
+    .slogan__line-end {
+      display: none;
+    }
+  }
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+
+  .tab__company,
+  .tab__service,
+  .tab__member {
+    flex-basis: 341px;
+    text-align: center;
+    opacity: 0.2;
+    color: #333333;
+  }
+}
+
+.company {
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  .slogan { grid-area: slogan; }
+  .paragraph1 { grid-area: paragraph1; }
+  .paragraph2 { grid-area: paragraph2; }
+  .paragraph3 { grid-area: paragraph3; }
+  .paragraph4 { grid-area: paragraph4; }
+}
+
+.slogan {
+  .slogan__line-start,
+  .slogan__lines,
+  .slogan__line-end {
+    color: #666666;
+    font-size: 36px;
+    line-height: 1.61;
+  }
+
+  .slogan__mobile {
+    font-size: 24px;
+    line-height: 1.67;
+    text-align: center;
+    color: #666666;
+  }
+
+  .slogan__open,
+  .slogan__close { 
+    justify-self: start;
+    align-self: start;
+  }
+
+  .slogan__open { grid-area: open; }
+  .slogan__line-start { grid-area: line-start; }
+  .slogan__lines { grid-area: lines; }
+  .slogan__line-end { grid-area: line-end; }
+  .slogan__close { grid-area: close; }
+}
+
+.goal {
+  background-color: #f5f5f5;
+
+  .goal__title {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #333333;
+  }
+
+  .goal__title { grid-area: title; }
+  .card01 { grid-area: card1; }
+  .card02 { grid-area: card2; }
+  .card03 { grid-area: card3; }
+  .card04 { grid-area: card4; }
+  .card05 { grid-area: card5; }
+  .card06 { grid-area: card6; }
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+
+  .card__number {
+    color: #663399;
+  }
+
+  .card__title {
+    color: #666666;
+  }
+}
+
+.service {
+  .service__image1 {
+    min-width: 640px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .service__container1,
+  .service__container2,
+  .service__container3,
+  .service__container4,
+  .service__container5,
+  .service__container6 { 
+    overflow: hidden;
+  }
+
+  .service__image1,
+  .service__image2,
+  .service__image3,
+  .service__image4,
+  .service__image5,
+  .service__image6 { 
+    width: 100%
+  }
+}
+
+.service-description {
+  .service-description__title {
+    color: #666666;
+  }
+  
+  .service-description__button {
+    background-color: #66339933;
+    color: #663399;
+  }
+} 
+
+.member {
+  * {
+    justify-self: center;
+  }
+
+  .person1 { grid-area: person1; }
+  .person2 { grid-area: person2; }
+  .person3 { grid-area: person3; }
+  .person4 { grid-area: person4; }
+  .person5 { grid-area: person5; }
+  .person6 { grid-area: person6; }
+  .person7 { grid-area: person7; }
+  .person8 { grid-area: person8; }
+  .person9 { grid-area: person9; }
+  .person10 { grid-area: person10; }
+  .person11 { grid-area: person11; }
+}
+
+.person {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto 30px auto 1fr;
+
+  * {
+    justify-self: center;
+  }
+
+  .person__name,
+  .person__team,
+  .person__comment {
+    text-align: center;
+  }
+
+  .person__name {
+    color: #333333;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .person__team {
+    color: #663399;
+    font-size: 14px;
+  }
+
+  .person__comment {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.69;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1199px) {
+  .goal {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr repeat(2, minmax(260px, 345px)) 1fr;
+    grid-template-rows: 70px repeat(3, 154px);
+    grid-template-areas: ". title title ." ". card1 card2 ." ". card3 card4 ." ". card5 card6 .";
+
+    .goal__title {
+      font-size: 28px;
+    }
+  }
+
+  .card {
+    display: grid;
+    grid-gap: 12px;
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+  
+    .card__number {
+      font-size: 16px;
+    }
+  
+    .card__title {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  .service {
+    padding: 80px 0 10px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr repeat(2, minmax(320px, 379px)) 1fr;
+    grid-template-rows: auto minmax(400px, auto) repeat(3, 240px);
+    grid-template-areas: ". description description ."
+                         ". image1 image1 ."
+                         ". image2 image3 ."
+                         ". image4 image5 ."
+                         ". image6 . .";
+
+    .service-description { grid-area: description; }
+    .service__container1 { grid-area: image1; }
+    .service__container2 { grid-area: image2; }
+    .service__container3 { grid-area: image3; }
+    .service__container4 { grid-area: image4; }
+    .service__container5 { grid-area: image5; }
+    .service__container6 { grid-area: image6; }
+  }
+
+  .service-description {
+    padding-bottom: 10px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-self: center;
+
+    * {
+      justify-self: center;
+      align-self: center;
+    }
+
+    .service-description__title {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .service-description__button {
+      font-size: 12px;
+      padding: 8px 12px 8px 12px;
+      border-radius: 16px;
+    }
+  }
+
+  .member {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr repeat(2, minmax(261px, 345px)) 1fr;
+    grid-template-rows: repeat(6, 280px);
+    grid-template-areas: ". person1 person2 ." 
+                         ". person3 person4 ." 
+                         ". person5 person6 ." 
+                         ". person7 person8 ." 
+                         ". person9 person10 ."
+                         ". person11 . .";
+  }
+}
+
+@media (max-width: 750px) {
+  .goal {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr minmax(260px, 345px) 1fr;
+    grid-template-rows: 70px repeat(3, 154px);
+    grid-template-areas: ". title ." ". card1 ." ". card2 ." ". card3 ." ". card4 ." ". card5 ." ". card6 .";
+
+    .goal__title {
+      font-size: 28px;
+    }
+  }
+
+  .card {
+    display: grid;
+    grid-gap: 12px;
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+  
+    .card__number {
+      font-size: 16px;
+    }
+  
+    .card__title {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  .service {
+    padding: 80px 0 10px 0;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr minmax(320px, 379px) 1fr;
+    grid-template-rows: auto minmax(400px, auto) repeat(5, 240px);
+    grid-template-areas: ". description ."
+                         ". image1 ."
+                         ". image2 ."
+                         ". image3 ."
+                         ". image4 ."
+                         ". image5 ."
+                         ". image6 .";
+
+    .service-description { grid-area: description; }
+    .service__container1 { grid-area: image1; }
+    .service__container2 { grid-area: image2; }
+    .service__container3 { grid-area: image3; }
+    .service__container4 { grid-area: image4; }
+    .service__container5 { grid-area: image5; }
+    .service__container6 { grid-area: image6; }
+  }
+
+  .service-description {
+    padding-bottom: 10px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-self: center;
+
+    * {
+      justify-self: center;
+      align-self: center;
+    }
+
+    .service-description__title {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .service-description__button {
+      font-size: 12px;
+      padding: 8px 12px 8px 12px;
+      border-radius: 16px;
+    }
+  }
+
+  .member {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-columns: 1fr minmax(261px, 345px) 1fr;
+    grid-template-rows: repeat(11, 280px);
+    grid-template-areas: ". person1 ." 
+                         ". person2 ." 
+                         ". person3 ." 
+                         ". person4 ." 
+                         ". person5 ." 
+                         ". person6 ." 
+                         ". person7 ." 
+                         ". person8 ." 
+                         ". person9 ."
+                         ". person10 ."
+                         ". person11 .";
+  }
+}
