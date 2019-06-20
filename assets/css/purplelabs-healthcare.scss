@@ -229,14 +229,10 @@
   .service-description {
     z-index: 2;
     padding: 200px 0 0 40px;
-    display: -ms-grid;
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: 15px;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    -ms-grid-rows: 31px 15px minmax(68px, auto) 15px 1fr;
-    grid-template-rows: 31px minmax(68px, auto) 1fr;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
 
     * {
       -ms-grid-column-align: start;
@@ -246,29 +242,19 @@
               align-self: start;
     }
 
+    .service-description__logo {
+      width: 278px;
+    }
+
     .service-description__title {
       font-size: 24px;
       line-height: 1.42;
+      margin: 30px 0 24px 0;
     }
     
     .service-description__button {
       font-size: 16px;
     }
-  }
-
-  .service-description > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1
-  }
-
-  .service-description > *:nth-child(2) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1
-  }
-
-  .service-description > *:nth-child(3) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1
   }
 
   .member {
@@ -828,16 +814,10 @@
 
   .service-description {
     padding-bottom: 10px;
-    display: -ms-grid;
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: 12px;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    -ms-grid-rows: 36px 12px auto 12px auto;
-    grid-template-rows: 36px auto auto;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
 
     * {
       -ms-grid-column-align: center;
@@ -854,26 +834,12 @@
     .service-description__title {
       text-align: center;
       font-size: 18px;
+      margin: 24px 0 12px 0;
     }
 
     .service-description__button {
       font-size: 14px;
     }
-  }
-
-  .service-description > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1
-  }
-
-  .service-description > *:nth-child(2) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1
-  }
-
-  .service-description > *:nth-child(3) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1
   }
 
   .member {
@@ -1121,16 +1087,10 @@
 
   .service-description {
     padding-bottom: 10px;
-    display: -ms-grid;
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: 12px;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    -ms-grid-rows: 36px 12px auto 12px auto;
-    grid-template-rows: 36px auto auto;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
 
     * {
       -ms-grid-column-align: center;
@@ -1147,26 +1107,12 @@
     .service-description__title {
       text-align: center;
       font-size: 18px;
+      margin: 24px 0 12px 0;
     }
 
     .service-description__button {
       font-size: 14px;
     }
-  }
-
-  .service-description > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1
-  }
-
-  .service-description > *:nth-child(2) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1
-  }
-
-  .service-description > *:nth-child(3) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1
   }
 
   .member {
