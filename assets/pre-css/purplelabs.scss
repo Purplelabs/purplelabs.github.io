@@ -630,7 +630,7 @@
   .member {
     padding: 50px 30px 50px 30px;
     display: grid;
-    grid-gap: 50px;
+    grid-row-gap: 50px;
     grid-template-columns: 1fr minmax(261px, 345px) 1fr;
     grid-template-rows: repeat(11, 280px);
     grid-template-areas: ". person1 ." 

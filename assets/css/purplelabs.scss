@@ -1092,8 +1092,8 @@
     padding: 50px 30px 50px 30px;
     display: -ms-grid;
     display: grid;
-    grid-gap: 50px;
-    -ms-grid-columns: 1fr 50px minmax(261px, 345px) 50px 1fr;
+    grid-row-gap: 50px;
+    -ms-grid-columns: 1fr minmax(261px, 345px) 1fr;
     grid-template-columns: 1fr minmax(261px, 345px) 1fr;
     -ms-grid-rows: 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px;
     grid-template-rows: repeat(11, 280px);
@@ -1172,57 +1172,57 @@
 
   .person1 {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person2 {
     -ms-grid-row: 3;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person3 {
     -ms-grid-row: 5;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person4 {
     -ms-grid-row: 7;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person5 {
     -ms-grid-row: 9;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person6 {
     -ms-grid-row: 11;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person7 {
     -ms-grid-row: 13;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person8 {
     -ms-grid-row: 15;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person9 {
     -ms-grid-row: 17;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person10 {
     -ms-grid-row: 19;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person11 {
     -ms-grid-row: 21;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .service-description {

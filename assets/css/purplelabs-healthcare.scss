@@ -280,7 +280,11 @@
     grid-template-columns: 1fr repeat(4, 216px) 1fr;
     -ms-grid-rows: 280px 40px 280px 40px 280px;
     grid-template-rows: repeat(3, 280px);
-        grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 . .";
+        grid-template-areas: ". person1 person2 person3 person4 ."
+                         ". person5 person6 person7 person8 ."
+                         ". person9 person10 person11 person12 ."
+                         ". person13 person14 person15 person16 ."
+                         ". person17 . . . .";
   }
 
   .slogan {
@@ -425,6 +429,36 @@
   .person11 {
     -ms-grid-row: 5;
     -ms-grid-column: 7;
+  }
+
+  .person12 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 9;
+  }
+
+  .person13 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+
+  .person14 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+  }
+
+  .person15 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 7;
+  }
+
+  .person16 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 9;
+  }
+
+  .person17 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
   }
 }
 
@@ -654,6 +688,12 @@
   .person9 { grid-area: person9; }
   .person10 { grid-area: person10; }
   .person11 { grid-area: person11; }
+  .person12 { grid-area: person12; }
+  .person13 { grid-area: person13; }
+  .person14 { grid-area: person14; }
+  .person15 { grid-area: person15; }
+  .person16 { grid-area: person16; }
+  .person17 { grid-area: person17; }
 }
 
 .person {
@@ -850,7 +890,10 @@
                          ". person5 person6 ." 
                          ". person7 person8 ." 
                          ". person9 person10 ."
-                         ". person11 . .";
+                         ". person11 person12 ."
+                         ". person13 person14 ."
+                         ". person15 person16 ."
+                         ". person17 . .";
   }
 
   .service-description,
@@ -969,6 +1012,36 @@
 
   .person11 {
     -ms-grid-row: 11;
+    -ms-grid-column: 3;
+  }
+
+  .person12 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 5;
+  }
+
+  .person13 {
+    -ms-grid-row: 13;
+    -ms-grid-column: 3;
+  }
+
+  .person14 {
+    -ms-grid-row: 13;
+    -ms-grid-column: 5;
+  }
+
+  .person15 {
+    -ms-grid-row: 15;
+    -ms-grid-column: 3;
+  }
+
+  .person16 {
+    -ms-grid-row: 15;
+    -ms-grid-column: 5;
+  }
+
+  .person17 {
+    -ms-grid-row: 17;
     -ms-grid-column: 3;
   }
 }
@@ -1100,8 +1173,8 @@
     padding: 50px 30px 50px 30px;
     display: -ms-grid;
     display: grid;
-    grid-gap: 50px;
-    -ms-grid-columns: 1fr 50px minmax(261px, 345px) 50px 1fr;
+    grid-row-gap: 50px;
+    -ms-grid-columns: 1fr minmax(261px, 345px) 1fr;
     grid-template-columns: 1fr minmax(261px, 345px) 1fr;
     -ms-grid-rows: 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px;
     grid-template-rows: repeat(11, 280px);
@@ -1115,7 +1188,13 @@
                          ". person8 ." 
                          ". person9 ."
                          ". person10 ."
-                         ". person11 .";
+                         ". person11 ."
+                         ". person12 ."
+                         ". person13 ."
+                         ". person14 ."
+                         ". person15 ."
+                         ". person16 ."
+                         ". person17 .";
   }
 
   .service-description,
@@ -1184,57 +1263,87 @@
 
   .person1 {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person2 {
     -ms-grid-row: 3;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person3 {
     -ms-grid-row: 5;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person4 {
     -ms-grid-row: 7;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person5 {
     -ms-grid-row: 9;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person6 {
     -ms-grid-row: 11;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person7 {
     -ms-grid-row: 13;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person8 {
     -ms-grid-row: 15;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person9 {
     -ms-grid-row: 17;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person10 {
     -ms-grid-row: 19;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
   }
 
   .person11 {
     -ms-grid-row: 21;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
+  }
+
+  .person12 {
+    -ms-grid-row: 23;
+    -ms-grid-column: 2;
+  }
+
+  .person13 {
+    -ms-grid-row: 25;
+    -ms-grid-column: 2;
+  }
+
+  .person14 {
+    -ms-grid-row: 27;
+    -ms-grid-column: 2;
+  }
+
+  .person15 {
+    -ms-grid-row: 29;
+    -ms-grid-column: 2;
+  }
+
+  .person16 {
+    -ms-grid-row: 31;
+    -ms-grid-column: 2;
+  }
+
+  .person17 {
+    -ms-grid-row: 33;
+    -ms-grid-column: 2;
   }
 
   .service-description {
