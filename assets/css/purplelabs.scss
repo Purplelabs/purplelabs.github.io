@@ -277,6 +277,18 @@
     -ms-grid-column: 1
   }
 
+  .member {
+    padding: 24px 0 24px 0;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 40px;
+    -ms-grid-columns: 1fr 40px 216px 40px 216px 40px 216px 40px 216px 40px 1fr;
+    grid-template-columns: 1fr repeat(4, 216px) 1fr;
+    -ms-grid-rows: 280px 40px 280px 40px 280px;
+    grid-template-rows: repeat(3, 280px);
+        grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 . .";
+  }
+
   .slogan {
     -ms-grid-row: 1;
     -ms-grid-row-span: 7;
@@ -359,6 +371,61 @@
   .card05 {
     -ms-grid-row: 5;
     -ms-grid-column: 5
+  }
+
+  .person1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .person2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+
+  .person3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
+
+  .person4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+  }
+
+  .person5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .person6 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+
+  .person7 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+  }
+
+  .person8 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+  }
+
+  .person9 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .person10 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+  }
+
+  .person11 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
   }
 }
 
@@ -568,6 +635,84 @@
     background-color: #66339933;
     color: #663399;
   }
+} 
+
+.member {
+  * {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .person1 { grid-area: person1; }
+  .person2 { grid-area: person2; }
+  .person3 { grid-area: person3; }
+  .person4 { grid-area: person4; }
+  .person5 { grid-area: person5; }
+  .person6 { grid-area: person6; }
+  .person7 { grid-area: person7; }
+  .person8 { grid-area: person8; }
+  .person9 { grid-area: person9; }
+  .person10 { grid-area: person10; }
+  .person11 { grid-area: person11; }
+}
+
+.person {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: auto 10px 30px 10px auto 10px 1fr;
+  grid-template-rows: auto 30px auto 1fr;
+
+  * {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .person__name,
+  .person__team,
+  .person__comment {
+    text-align: center;
+  }
+
+  .person__name {
+    color: #333333;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .person__team {
+    color: #663399;
+    font-size: 14px;
+  }
+
+  .person__comment {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.69;
+  }
+}
+
+.person > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1
+}
+
+.person > *:nth-child(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1
+}
+
+.person > *:nth-child(3) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1
+}
+
+.person > *:nth-child(4) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1
 }
 
 @media (min-width: 751px) and (max-width: 1199px) {
@@ -689,6 +834,23 @@
     -ms-grid-column: 1
   }
 
+  .member {
+    padding: 50px 30px 50px 30px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 50px;
+    -ms-grid-columns: 1fr 50px minmax(261px, 345px) 50px minmax(261px, 345px) 50px 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(261px, 345px)) 1fr;
+    -ms-grid-rows: 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px;
+    grid-template-rows: repeat(6, 280px);
+        grid-template-areas: ". person1 person2 ." 
+                         ". person3 person4 ." 
+                         ". person5 person6 ." 
+                         ". person7 person8 ." 
+                         ". person9 person10 ."
+                         ". person11 . .";
+  }
+
   .service-description,
     .service__container1 {
     -ms-grid-row: 3;
@@ -747,6 +909,61 @@
   .card05 {
     -ms-grid-row: 7;
     -ms-grid-column: 3
+  }
+
+  .person1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .person2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+
+  .person3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .person4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+
+  .person5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .person6 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+  }
+
+  .person7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+
+  .person8 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+  }
+
+  .person9 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+  }
+
+  .person10 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 5;
+  }
+
+  .person11 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
   }
 }
 
@@ -871,6 +1088,30 @@
     -ms-grid-column: 1
   }
 
+  .member {
+    padding: 50px 30px 50px 30px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-justify-content: center;
+            justify-content: center;
+    grid-gap: 50px;
+    -ms-grid-columns: 1fr 50px minmax(261px, 345px) 50px 1fr;
+    grid-template-columns: 1fr minmax(261px, 345px) 1fr;
+    -ms-grid-rows: 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px 50px 280px;
+    grid-template-rows: repeat(11, 280px);
+        grid-template-areas: ". person1 ." 
+                         ". person2 ." 
+                         ". person3 ." 
+                         ". person4 ." 
+                         ". person5 ." 
+                         ". person6 ." 
+                         ". person7 ." 
+                         ". person8 ." 
+                         ". person9 ."
+                         ". person10 ."
+                         ". person11 .";
+  }
+
   .service-description,
     .service__container1 {
     -ms-grid-row: 3;
@@ -929,6 +1170,61 @@
   .card05 {
     -ms-grid-row: 11;
     -ms-grid-column: 3
+  }
+
+  .person1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .person2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .person3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .person4 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+
+  .person5 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+  }
+
+  .person6 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+  }
+
+  .person7 {
+    -ms-grid-row: 13;
+    -ms-grid-column: 3;
+  }
+
+  .person8 {
+    -ms-grid-row: 15;
+    -ms-grid-column: 3;
+  }
+
+  .person9 {
+    -ms-grid-row: 17;
+    -ms-grid-column: 3;
+  }
+
+  .person10 {
+    -ms-grid-row: 19;
+    -ms-grid-column: 3;
+  }
+
+  .person11 {
+    -ms-grid-row: 21;
+    -ms-grid-column: 3;
   }
 
   .service-description {
