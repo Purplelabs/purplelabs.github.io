@@ -9,37 +9,37 @@ const sectionService = document.querySelector('.service');
 const sectionMember = document.querySelector('.member');
 const sectionBottomImageContainer = document.querySelector('.bottom-image-container');
 
-const selectTab = (tab, isSelected) => {
+function selectTab(tab, isSelected) {
   tab.style.opacity = isSelected ? 1 : 0.2;
   tab.style.color = isSelected ? '#663399' : '#333333';
   tab.style['border-bottom'] = isSelected ? '3px solid #663399' : null;
 }
 
-const clickCompany = () => {
+function clickCompany() {
   selectTab(tabCompany, true);
   selectTab(tabService, false);
   selectTab(tabMember, false);
-  sectionCompany.style = null;
-  sectionGoal.style = null;
+  sectionCompany.style.display = '';
+  sectionGoal.style.display = '';
   sectionService.style.display = 'none';
   // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
-  sectionBottomImageContainer.style = null;
-};
+  sectionBottomImageContainer.style.display = '';
+}
 
-const clickService = () => {
+function clickService() {
   selectTab(tabCompany, false);
   selectTab(tabService, true);
   selectTab(tabMember, false);
   sectionCompany.style.display = 'none';
   sectionGoal.style.display = 'none';
-  sectionService.style = null;
+  sectionService.style.display = '';
   // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
   sectionBottomImageContainer.style.display = 'none';
-};
+}
 
-const clickMember = () => {
+function clickMember() {
   selectTab(tabCompany, false);
   selectTab(tabService, false);
   selectTab(tabMember, true);
@@ -47,9 +47,9 @@ const clickMember = () => {
   sectionGoal.style.display = 'none';
   sectionService.style.display = 'none';
   // sectionComment.style = null;
-  sectionMember.style = null;
+  sectionMember.style.display = '';
   sectionBottomImageContainer.style.display = 'none';
-};
+}
 
 tabCompany.addEventListener('click', clickCompany);
 tabService.addEventListener('click', clickService);
