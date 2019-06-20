@@ -120,6 +120,90 @@
       font-size: 20px;
     }
   }
+
+  .company {
+    padding: 100px 0 100px 0;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 48px;
+    grid-row-gap: 20px;
+    -ms-grid-columns: 1fr 48px 464px 48px 512px 48px 1fr;
+    grid-template-columns: 1fr 464px 512px 1fr;
+    -ms-grid-rows: auto 20px auto 20px auto 20px auto;
+        grid-template-areas: ". slogan paragraph1 ."
+                         ". slogan paragraph2 ."
+                         ". slogan paragraph3 ."
+                         ". slogan paragraph4 .";
+  }
+
+  .slogan {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40px (auto)[2] 1fr;
+    grid-template-columns: 40px repeat(2, auto) 1fr;
+    -ms-grid-rows: (auto)[3] 1fr;
+    grid-template-rows: repeat(3, auto) 1fr;
+        grid-template-areas: "open line-start line-start ."
+                         ". lines lines ."
+                         ". line-end close .";
+    
+    .slogan__mobile {
+      display: none;
+    }
+  }
+
+  .slogan {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 3;
+  }
+
+  .paragraph1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+
+  .paragraph2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+
+  .paragraph3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+  }
+
+  .paragraph4 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+  }
+
+  .slogan__open {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1
+  }
+
+  .slogan__line-start {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2
+  }
+
+  .slogan__lines {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2
+  }
+
+  .slogan__line-end {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2
+  }
+
+  .slogan__close {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3
+  }
 }
 
 @media (max-width: 1199px) {
@@ -132,6 +216,62 @@
       padding: 21px 0 21px 0;
       font-size: 16px;
     }
+  }
+
+  .company {
+    padding: 50px 0 50px 0;
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap: 20px;
+    -ms-grid-columns: 30px auto 30px;
+    grid-template-columns: 30px auto 30px;
+    -ms-grid-rows: auto 20px 10px;
+    grid-template-rows: auto 10px;
+        grid-template-areas: ". slogan ."
+                         ". . ."
+                         ". paragraph1 ."
+                         ". paragraph2 ."
+                         ". paragraph3 ."
+                         ". paragraph4 .";
+  }
+
+  .slogan {
+    display: -ms-grid;
+    display: grid;
+    
+    .slogan__open,
+    .slogan__close,
+    .slogan__line-start,
+    .slogan__lines,
+    .slogan__line-end {
+      display: none;
+    }
+  }
+
+  .slogan {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+  }
+
+  .paragraph1 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
+
+  .paragraph2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+  }
+
+  .paragraph3 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+  }
+
+  .paragraph4 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
   }
 }
 
@@ -154,4 +294,53 @@
     opacity: 0.2;
     color: #333333;
   }
+}
+
+.company {
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  .slogan { grid-area: slogan; }
+  .paragraph1 { grid-area: paragraph1; }
+  .paragraph2 { grid-area: paragraph2; }
+  .paragraph3 { grid-area: paragraph3; }
+  .paragraph4 { grid-area: paragraph4; }
+}
+
+.slogan {
+  .slogan__line-start,
+  .slogan__lines,
+  .slogan__line-end {
+    color: #666666;
+    font-size: 36px;
+    line-height: 1.61;
+  }
+
+  .slogan__mobile {
+    font-size: 24px;
+    line-height: 1.67;
+    text-align: center;
+    color: #666666;
+  }
+
+  .slogan__open,
+  .slogan__close { 
+    -ms-grid-column-align: start; 
+        justify-self: start;
+    -webkit-align-self: start;
+                -ms-grid-row-align: start;
+            align-self: start;
+  }
+
+  .slogan__open { grid-area: open; }
+  .slogan__line-start { grid-area: line-start; }
+  .slogan__lines { grid-area: lines; }
+  .slogan__line-end { grid-area: line-end; }
+  .slogan__close { grid-area: close; }
 }
