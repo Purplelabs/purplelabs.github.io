@@ -9,13 +9,13 @@ const sectionService = document.querySelector('.service');
 const sectionMember = document.querySelector('.member');
 const sectionBottomImageContainer = document.querySelector('.bottom-image-container');
 
-const selectTab = (tab, isSelected) => {
+function selectTab(tab, isSelected) {
   tab.style.opacity = isSelected ? 1 : 0.2;
   tab.style.color = isSelected ? '#663399' : '#333333';
   tab.style['border-bottom'] = isSelected ? '3px solid #663399' : null;
 }
 
-const clickCompany = () => {
+function clickCompany() {
   selectTab(tabCompany, true);
   selectTab(tabService, false);
   selectTab(tabMember, false);
@@ -25,9 +25,9 @@ const clickCompany = () => {
   // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
   sectionBottomImageContainer.style = null;
-};
+}
 
-const clickService = () => {
+function clickService() {
   selectTab(tabCompany, false);
   selectTab(tabService, true);
   selectTab(tabMember, false);
@@ -37,9 +37,9 @@ const clickService = () => {
   // sectionComment.style.display = 'none';
   sectionMember.style.display = 'none';
   sectionBottomImageContainer.style.display = 'none';
-};
+}
 
-const clickMember = () => {
+function clickMember() {
   selectTab(tabCompany, false);
   selectTab(tabService, false);
   selectTab(tabMember, true);
@@ -49,7 +49,7 @@ const clickMember = () => {
   // sectionComment.style = null;
   sectionMember.style = null;
   sectionBottomImageContainer.style.display = 'none';
-};
+}
 
 tabCompany.addEventListener('click', clickCompany);
 tabService.addEventListener('click', clickService);
