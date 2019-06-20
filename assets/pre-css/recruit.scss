@@ -86,6 +86,40 @@
       font-size: 18px;
     }
   }
+
+  .purpleway {
+    padding: 100px 0 100px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr repeat(4, 248px) 1fr;
+    grid-template-rows: 70px repeat(3, 180px);
+    grid-template-areas: ". title title title title ."
+                         ". card1 card2 card3 card4 ."
+                         ". card5 card6 card7 card8 ."
+                         ". card9 card10 . . .";
+
+    .purpleway__title {
+      font-size: 36px;
+    }
+  }
+
+  .card {
+    padding: 30px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "number" "title";
+  
+    .card__number {
+      font-size: 18px;
+    }
+  
+    .card__title {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -107,6 +141,123 @@
       padding: 19px 74px 19px 74px;
       margin: auto;
       font-size: 16px;
+    }
+  }
+}
+
+.purpleway {
+  background-color: #f5f5f5;
+
+  .purpleway__title {
+    text-align: center;
+    color: #333333;
+  }
+
+  .purpleway__title { grid-area: title; }
+  .card01 { grid-area: card1; }
+  .card02 { grid-area: card2; }
+  .card03 { grid-area: card3; }
+  .card04 { grid-area: card4; }
+  .card05 { grid-area: card5; }
+  .card06 { grid-area: card6; }
+  .card07 { grid-area: card7; }
+  .card08 { grid-area: card8; }
+  .card09 { grid-area: card9; }
+  .card10 { grid-area: card10; }
+}
+
+.card {
+  background-color: white;
+
+  .card__number {
+    color: #663399;
+  }
+
+  .card__title {
+    color: #666666;
+  }
+
+  .card__number { grid-area: number; }
+  .card__title { grid-area: title; }
+}
+
+@media (min-width: 751px) and (max-width: 1199px) {
+  .purpleway {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr repeat(2, minmax(260px, 345px)) 1fr;
+    grid-template-rows: 40px repeat(5, 154px);
+    grid-template-areas: ". title title ."
+                         ". card1 card2 ."
+                         ". card3 card4 ."
+                         ". card5 card6 ."
+                         ". card7 card8 ."
+                         ". card9 card10 .";
+
+    .purpleway__title {
+      font-size: 28px;
+    }
+  }
+
+  .card {
+    padding: 30px;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "number" "title";
+  
+    .card__number {
+      font-size: 16px;
+    }
+  
+    .card__title {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .purpleway {
+    padding: 50px 30px 50px 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr minmax(260px, 345px) 1fr;
+    grid-template-rows: 40px repeat(10, 154px);
+    grid-template-areas: ". title ."
+                         ". card1 ."
+                         ". card2 ."
+                         ". card3 ."
+                         ". card4 ."
+                         ". card5 ."
+                         ". card6 ."
+                         ". card7 ."
+                         ". card8 ."
+                         ". card9 ."
+                         ". card10 .";
+
+    .purpleway__title {
+      font-size: 28px;
+    }
+  }
+
+  .card {
+    padding: 30px;
+    display: grid;
+    grid-gap: 12px;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "number" "title";
+  
+    .card__number {
+      font-size: 16px;
+    }
+  
+    .card__title {
+      font-size: 20px;
+      line-height: 1.6;
     }
   }
 }
