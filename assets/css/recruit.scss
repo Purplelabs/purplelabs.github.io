@@ -743,7 +743,8 @@
     display: -ms-grid;
     display: grid;
     grid-gap: 12px;
-    grid-auto-flow: row;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
     -ms-grid-rows: auto 12px 1fr;
     grid-template-rows: auto 1fr;
         grid-template-areas: "number" "title";

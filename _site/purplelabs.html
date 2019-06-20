@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/default.css">
   <link rel="stylesheet" type="text/css" href="assets/css/header.css">
   <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
   <link rel="stylesheet" type="text/css" href=assets/css/purplelabs.css>
   
   <title>
@@ -256,15 +257,19 @@
   <a href="recruit.html" class="bold header__recruit">채용</a>
 </header>
   <section class="menu" style="display: none;">
-  <a href="index.html" class="menu__logo-container">
-    <img class="menu__logo" src="assets/images/default/m-logo-purplelabs-white.png" 
-    srcset="assets/images/default/m-logo-purplelabs-white@2x.png 2x, assets/images/default/m-logo-purplelabs-white@3x.png 3x">
-  </a>
-  <img class="menu__close" src="assets/images/default/ic-menu-close.svg">
+  <div class="menu__bar">
+    <a href="index.html" class="menu__logo-container">
+      <img class="menu__logo" src="assets/images/default/m-logo-purplelabs-white.png" 
+      srcset="assets/images/default/m-logo-purplelabs-white@2x.png 2x, assets/images/default/m-logo-purplelabs-white@3x.png 3x">
+    </a>
+    <img class="menu__close" src="assets/images/default/ic-menu-close.svg">
+  </div>
 
-  <a href="purplelabs.html" class="normal menu__purplelabs">퍼플랩스</a>
-  <a href="purplelabs-healthcare.html" class="normal menu__purplelabs-healthcare">퍼플랩스헬스케어</a>
-  <a href="recruit.html" class="normal menu__recruit">채용</a>
+  <div class="menu__content">
+    <a href="purplelabs.html" class="normal menu__purplelabs">퍼플랩스</a>
+    <a href="purplelabs-healthcare.html" class="normal menu__purplelabs-healthcare">퍼플랩스헬스케어</a>
+    <a href="recruit.html" class="normal menu__recruit">채용</a>
+  </div>
 </section>
 
   <script src="assets/js/header.js"></script>

@@ -1,0 +1,59 @@
+---
+---
+.menu {
+  z-index: 20;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.95;
+  padding: 0 30px 0 30px; 
+  display: flex;
+  flex-direction: column;
+
+  .menu__bar {
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu__logo {
+      width: 100%;
+      max-width: 58px; 
+      flex: 1;
+      margin-right: auto;
+    }
+
+    .menu__close {
+      cursor: pointer;
+      align-self: center;
+    }
+  }
+  
+  .menu__content {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+
+    .menu__purplelabs,
+    .menu__purplelabs-healthcare,
+    .menu__recruit { 
+      padding: 43px 0 43px 0;
+      width: 260px;
+      font-size: 24px;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    .menu__purplelabs,
+    .menu__purplelabs-healthcare {
+      border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+    }
+  }
+}
