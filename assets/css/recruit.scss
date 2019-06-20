@@ -716,8 +716,8 @@
     padding: 50px 30px 50px 30px;
     display: -ms-grid;
     display: grid;
-    grid-gap: 10px;
-    -ms-grid-columns: 1fr 10px minmax(260px, 345px) 10px 1fr;
+    grid-row-gap: 10px;
+    -ms-grid-columns: 1fr minmax(260px, 345px) 1fr;
     grid-template-columns: 1fr minmax(260px, 345px) 1fr;
     -ms-grid-rows: 40px 10px 154px 10px 154px 10px 154px 10px 154px 10px 154px 10px 154px 10px 154px 10px 154px 10px 154px 10px 154px;
     grid-template-rows: 40px repeat(10, 154px);
@@ -761,7 +761,7 @@
   .purpleway__title {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1
   }
 
@@ -773,43 +773,43 @@
   }
   .card01 {
     -ms-grid-row: 3;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card02 {
     -ms-grid-row: 5;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card03 {
     -ms-grid-row: 7;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card04 {
     -ms-grid-row: 9;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card05 {
     -ms-grid-row: 11;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card06 {
     -ms-grid-row: 13;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card07 {
     -ms-grid-row: 15;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card08 {
     -ms-grid-row: 17;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card09 {
     -ms-grid-row: 19;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card10 {
     -ms-grid-row: 21;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
 
   .card > .card__number {
@@ -819,7 +819,7 @@
   .card__title {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1
   }
 
@@ -832,7 +832,7 @@
   .culture__title {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1
   }
 
