@@ -1092,8 +1092,6 @@
     padding: 50px 30px 50px 30px;
     display: -ms-grid;
     display: grid;
-    -webkit-justify-content: center;
-            justify-content: center;
     grid-gap: 50px;
     -ms-grid-columns: 1fr 50px minmax(261px, 345px) 50px 1fr;
     grid-template-columns: 1fr minmax(261px, 345px) 1fr;

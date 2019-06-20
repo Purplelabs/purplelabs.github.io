@@ -175,8 +175,8 @@
     grid-template-rows: 640px repeat(3, 250);
     grid-template-areas: ". image1 image1 image1 ."
                          ". image2 image3 image4 ."
-                         ". image2 image6 image6 ."
-                         ". image5 image6 image6 .";
+                         ". image5 image5 image4 ."
+                         ". image5 image5 image6 .";
 
     .service-description,
     .service__container1 { grid-area: image1; }
@@ -198,27 +198,20 @@
     grid-auto-flow: row;
     grid-gap: 15px;
     grid-template-columns: auto;
-    grid-template-rows: 45px minmax(73px, auto) 1fr;
+    grid-template-rows: 31px minmax(68px, auto) 1fr;
 
     * {
       justify-self: start;
       align-self: start;
     }
 
-    .service-description__logo {
-      width: 185px;
-    }
-
     .service-description__title {
-      width: 185px;
       font-size: 24px;
       line-height: 1.42;
     }
     
     .service-description__button {
-      font-size: 14px;
-      padding: 8px 15px 8px 15px;
-      border-radius: 10px;
+      font-size: 16px;
     }
   }
 
@@ -398,10 +391,10 @@
   }
   
   .service-description__button {
-    background-color: #66339933;
     color: #663399;
+    text-decoration: none;
   }
-} 
+}
 
 .member {
   * {
@@ -512,14 +505,18 @@
     padding-bottom: 10px;
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 15px;
+    grid-gap: 12px;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 36px auto auto;
     justify-self: center;
 
     * {
       justify-self: center;
       align-self: center;
+    }
+
+    .service-description__logo {
+      width: 260px;
     }
 
     .service-description__title {
@@ -528,9 +525,7 @@
     }
 
     .service-description__button {
-      font-size: 12px;
-      padding: 8px 12px 8px 12px;
-      border-radius: 16px;
+      font-size: 14px;
     }
   }
 
@@ -607,14 +602,18 @@
     padding-bottom: 10px;
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 15px;
+    grid-gap: 12px;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 36px auto auto;
     justify-self: center;
 
     * {
       justify-self: center;
       align-self: center;
+    }
+
+    .service-description__logo {
+      width: 260px;
     }
 
     .service-description__title {
@@ -623,16 +622,13 @@
     }
 
     .service-description__button {
-      font-size: 12px;
-      padding: 8px 12px 8px 12px;
-      border-radius: 16px;
+      font-size: 14px;
     }
   }
 
   .member {
     padding: 50px 30px 50px 30px;
     display: grid;
-    justify-content: center;
     grid-gap: 50px;
     grid-template-columns: 1fr minmax(261px, 345px) 1fr;
     grid-template-rows: repeat(11, 280px);
