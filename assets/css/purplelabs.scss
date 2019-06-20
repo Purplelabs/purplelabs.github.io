@@ -972,8 +972,8 @@
     padding: 50px 30px 50px 30px;
     display: -ms-grid;
     display: grid;
-    grid-gap: 10px;
-    -ms-grid-columns: 1fr 10px minmax(260px, 345px) 10px 1fr;
+    grid-row-gap: 10px;
+    -ms-grid-columns: 1fr minmax(260px, 345px) 1fr;
     grid-template-columns: 1fr minmax(260px, 345px) 1fr;
     -ms-grid-rows: 70px 10px 154px 10px 154px 10px 154px;
     grid-template-rows: 70px repeat(3, 154px);
@@ -1146,28 +1146,28 @@
   }
   .goal__title {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1
   }
   .card01 {
     -ms-grid-row: 3;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card02 {
     -ms-grid-row: 5;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card03 {
     -ms-grid-row: 7;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card04 {
     -ms-grid-row: 9;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
   .card05 {
     -ms-grid-row: 11;
-    -ms-grid-column: 3
+    -ms-grid-column: 2
   }
 
   .person1 {
