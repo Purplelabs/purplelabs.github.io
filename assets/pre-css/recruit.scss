@@ -1,0 +1,112 @@
+---
+---
+.header {
+  .header__recruit {
+    border-bottom: 2px solid white;
+  }
+}
+
+.header--scrolled {
+  .header__recruit {
+    border-bottom: 2px solid #333333;
+  }
+}
+
+.top-image-container,
+.bottom-image-container {
+  overflow: hidden;
+  position: relative;
+
+  .top-image-container__image,
+  .bottom-image-container__image {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bottom-text-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.recruit.top-image-container {
+  max-height: 560px;
+
+  .recruit.top-image-container__image {
+    min-width: 960px;
+  }
+}
+
+.recruit.bottom-image-container {
+  max-height: 400px;
+
+  .recruit.bottom-image-container__image {
+    min-width: 1306px;
+  }
+}
+
+.recruit.bottom-text-container {
+  .recruit.bottom-text-container__title,
+  .recruit.bottom-text-container__button {
+    color: white;
+    text-align: center;
+  }
+
+  .recruit.bottom-text-container__button {
+    border-radius: 4px;
+    background-color: white;
+    color: #663399;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recruit.bottom-text-container {
+    padding: 100px 30px 126px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    .recruit.bottom-text-container__title {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .recruit.bottom-text-container__button {
+      padding: 20px 48px 20px 48px;
+      margin: auto;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .recruit.bottom-text-container {
+    padding: 50px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    .recruit.bottom-text-container__title {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  
+    .recruit.bottom-text-container__button {
+      padding: 19px 74px 19px 74px;
+      margin: auto;
+      font-size: 16px;
+    }
+  }
+}
