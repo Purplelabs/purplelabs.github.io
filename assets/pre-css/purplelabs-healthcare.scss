@@ -188,9 +188,13 @@
     .service__container5 { grid-area: image5; }
     .service__container6 { grid-area: image6; }
   }
-  
-  .service__image1 {
-    z-index: -1;
+
+  .service__container1 {
+    display: flex;
+    justify-content: flex-end;
+    .service__image1 {
+      z-index: -1;
+    }
   }
 
   .service-description {
@@ -369,9 +373,7 @@
 .service {
   .service__image1 {
     min-width: 640px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 800px;
   }
 
   .service__container1,
@@ -506,6 +508,14 @@
                          ". image4 image5 ."
                          ". image6 . .";
 
+    .service__container1 {
+      .service__image1 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
     .service-description { grid-area: description; }
     .service__container1 { grid-area: image1; }
     .service__container2 { grid-area: image2; }
@@ -602,6 +612,14 @@
                          ". image4 ."
                          ". image5 ."
                          ". image6 .";
+
+    .service__container1 {
+      .service__image1 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
 
     .service-description { grid-area: description; }
     .service__container1 { grid-area: image1; }
