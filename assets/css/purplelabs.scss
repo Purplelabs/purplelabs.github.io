@@ -632,8 +632,8 @@
   }
   
   .service-description__button {
-    background-color: rgba($color: #663399, $alpha: 0.1);
-    color: #663399;
+    background-color: rgba($color: #04854a, $alpha: 0.1);
+    color: #04854a;
   }
 } 
 
@@ -805,6 +805,10 @@
       -webkit-align-self: center;
                   -ms-grid-row-align: center;
               align-self: center;
+    }
+
+    .service-description__logo {
+      width: 144px;
     }
 
     .service-description__title {
@@ -1059,6 +1063,10 @@
       -webkit-align-self: center;
                   -ms-grid-row-align: center;
               align-self: center;
+    }
+
+    .service-description__logo {
+      width: 144px;
     }
 
     .service-description__title {
