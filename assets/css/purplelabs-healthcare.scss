@@ -817,6 +817,15 @@
       }
     }
 
+    .service__container4 {
+      .service__image4 {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+      }
+    }
+
     .service-description { grid-area: description; }
     .service__container1 { grid-area: image1; }
     .service__container2 { grid-area: image2; }
@@ -1096,6 +1105,15 @@
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
+      }
+    }
+
+    .service__container4 {
+      .service__image4 {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
       }
     }
 
