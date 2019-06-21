@@ -7,6 +7,7 @@
 
   .top-image-container__image,
   .bottom-image-container__image {
+    display: block;
     width: 100%;
     position: relative;
     left: 50%;
@@ -420,6 +421,7 @@
     grid-area: map;
 
     .directions__map {
+      display: block;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
