@@ -15,19 +15,13 @@ function debounce(func) {
 
 function updateHeader() {
   const header = document.querySelector('header');
-  if (document.documentElement.scrollTop < 50) {
+  if (document.documentElement.scrollTop + document.querySelector('body').scrollTop < 50) {
     header.classList.remove('header--scrolled');
     header.classList.add('header');
   } else {
     header.classList.add('header--scrolled');
     header.classList.remove('header');
   }
-}
-
-function updateHeader2() {
-  const header = document.querySelector('header');
-    header.classList.remove('header--scrolled');
-    header.classList.add('header');
 }
 
 window.addEventListener('scroll', debounce(updateHeader));
