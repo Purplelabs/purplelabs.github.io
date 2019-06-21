@@ -54,7 +54,7 @@ header {
 
     .header__logo-purple,
     .header__logo-white {
-      flex: 1;
+      margin-right: auto;
     }
   }
 }
@@ -67,7 +67,7 @@ header {
 
     .header__logo-purple,
     .header__logo-white {
-      flex-basis: 697px;
+      margin-right: 573px;
     }
   }
 }
@@ -76,12 +76,7 @@ header {
   header {
     padding: 0 30px 0 30px;
     display: flex;
-    justify-content: stretch;
-
-    .header__logo-white--mobile,
-    .header__logo-purple--mobile {
-      flex: 1;
-    }
+    justify-content: space-between;
   }
 }
 
