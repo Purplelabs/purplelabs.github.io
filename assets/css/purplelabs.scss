@@ -140,13 +140,14 @@
   .slogan {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40px (auto)[2] 1fr;
-    grid-template-columns: 40px repeat(2, auto) 1fr;
+    grid-column-gap: 15px;
+    -ms-grid-columns: auto 15px auto 15px auto 15px auto 15px 1fr;
+    grid-template-columns: repeat(4, auto) 1fr;
     -ms-grid-rows: (auto)[3] 1fr;
     grid-template-rows: repeat(3, auto) 1fr;
-        grid-template-areas: "open line-start line-start ."
-                         ". lines lines ."
-                         ". line-end close .";
+        grid-template-areas: "open line-start line-start . ."
+                         ". lines lines lines ."
+                         ". line-end close . .";
     
     .slogan__mobile {
       display: none;
@@ -323,24 +324,24 @@
 
   .slogan__line-start {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3
   }
 
   .slogan__lines {
     -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5
   }
 
   .slogan__line-end {
     -ms-grid-row: 3;
-    -ms-grid-column: 2
+    -ms-grid-column: 3
   }
 
   .slogan__close {
     -ms-grid-row: 3;
-    -ms-grid-column: 3
+    -ms-grid-column: 5
   }
 
   .goal__title {

@@ -127,11 +127,12 @@
 
   .slogan {
     display: grid;
-    grid-template-columns: 40px repeat(2, auto) 1fr;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(4, auto) 1fr;
     grid-template-rows: repeat(3, auto) 1fr;
-    grid-template-areas: "open line-start line-start ."
-                         ". lines lines ."
-                         ". line-end close .";
+    grid-template-areas: "open line-start line-start . ."
+                         ". lines lines lines ."
+                         ". line-end close . .";
     
     .slogan__mobile {
       display: none;
