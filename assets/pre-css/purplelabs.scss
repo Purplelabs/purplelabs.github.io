@@ -286,6 +286,7 @@
   .tab__company,
   .tab__service,
   .tab__member {
+    cursor: pointer;
     flex-basis: 341px;
     text-align: center;
     opacity: 0.2;
