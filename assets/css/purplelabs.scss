@@ -519,6 +519,7 @@
   .tab__company,
   .tab__service,
   .tab__member {
+    cursor: pointer;
     -webkit-flex-basis: 341px;
             flex-basis: 341px;
     text-align: center;
