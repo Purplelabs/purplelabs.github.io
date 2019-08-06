@@ -233,7 +233,7 @@
     grid-gap: 40px;
     grid-template-columns: 1fr repeat(4, 216px) 1fr;
     grid-template-rows: repeat(3, 280px);
-    grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 . .";
+    grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 person12 .";
   }
 }
 
@@ -422,6 +422,7 @@
   .person9 { grid-area: person9; }
   .person10 { grid-area: person10; }
   .person11 { grid-area: person11; }
+  .person12 { grid-area: person12; }
 }
 
 .person {
@@ -560,7 +561,7 @@
                          ". person5 person6 ." 
                          ". person7 person8 ." 
                          ". person9 person10 ."
-                         ". person11 . .";
+                         ". person11 person12 .";
   }
 }
 
@@ -672,6 +673,7 @@
                          ". person8 ." 
                          ". person9 ."
                          ". person10 ."
-                         ". person11 .";
+                         ". person11 ."
+                         ". person12 .";
   }
 }
