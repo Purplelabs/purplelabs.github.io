@@ -294,7 +294,7 @@
     grid-template-columns: 1fr repeat(4, 216px) 1fr;
     -ms-grid-rows: 280px 40px 280px 40px 280px;
     grid-template-rows: repeat(3, 280px);
-        grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 person12 . .";
+        grid-template-areas: ". person1 person2 person3 person4 ." ". person5 person6 person7 person8 ." ". person9 person10 person11 person12 .";
   }
 
   .slogan {
@@ -434,6 +434,11 @@
   .person11 {
     -ms-grid-row: 5;
     -ms-grid-column: 7;
+  }
+
+  .person12 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 9;
   }
 }
 
@@ -660,6 +665,7 @@
   .person9 { grid-area: person9; }
   .person10 { grid-area: person10; }
   .person11 { grid-area: person11; }
+  .person12 { grid-area: person12; }
 }
 
 .person {
@@ -867,7 +873,7 @@
                          ". person5 person6 ." 
                          ". person7 person8 ." 
                          ". person9 person10 ."
-                         ". person11 . .";
+                         ". person11 person12 .";
   }
 
   .service-description,
@@ -983,6 +989,11 @@
   .person11 {
     -ms-grid-row: 11;
     -ms-grid-column: 3;
+  }
+
+  .person12 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 5;
   }
 }
 
@@ -1139,7 +1150,8 @@
                          ". person8 ." 
                          ". person9 ."
                          ". person10 ."
-                         ". person11 .";
+                         ". person11 ."
+                         ". person12 .";
   }
 
   .service-description,
@@ -1254,6 +1266,11 @@
 
   .person11 {
     -ms-grid-row: 21;
+    -ms-grid-column: 2;
+  }
+
+  .person12 {
+    -ms-grid-row: 23;
     -ms-grid-column: 2;
   }
 
